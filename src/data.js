@@ -1,10 +1,18 @@
 /* Manejo de data */
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+//funcion filtrar
+window.filterPoke = {
 
-const example = () => {
-  return 'example';
+    filterPokeCommon: (allPokeData) => {
+        //console.log(allPokeData);
+        const resultFilterCommons = allPokeData.filter(elementObject => {
+            return elementObject.avg_spawns > 50;
+
+        });
+        console.log(resultFilterCommons);
+
+        return resultFilterCommons; //nuevo arreglo de 41 pokemones con todos sus objetos
+
+    }
+
 };
-
-window.example = example;
