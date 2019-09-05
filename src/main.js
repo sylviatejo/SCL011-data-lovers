@@ -11,7 +11,6 @@ const container = document.getElementById("principal");
 
 
 buttonPokeComm.addEventListener("click", () => {
-    //document.getElementById("principal").innerHTML = printPokeComm;
 
     //recorrer el nuevo arreglo de 41 pokemones que esta guardado en la variable printPokeComm
     printPokeComm.forEach(element => {
@@ -19,13 +18,3 @@ buttonPokeComm.addEventListener("click", () => {
     })
 
 })
-
-
-
-
-
-
-/*
-//for (let [key, value] of newdataObject.entries(newdataObject)) {
-//console.log(key.name + ':' + value.name);
-*/
