@@ -18,11 +18,11 @@ buttonPokeComm.addEventListener("click", () => {
         let createMiniPokeCars = document.createElement("div");
         //Asignando elemento padre al div creado con variable que es el contenedor
         let asigPadre = document.getElementById("principal"); //deberia ser la caja pokebox
-        //let referencia = document.getElementsByTagName("div")[0];
         //asignamos atributos de clases dadas en style
         createMiniPokeCars.setAttribute("class", "classDivMiniCard");
-        //asigPadre.insertBefore(createMiniPokeCars, referencia);
+        //agregamos hijo al padre con metodo appendChild
         asigPadre.appendChild(createMiniPokeCars);
+        //Imprimo los valores de las propiedades de la data filtrada
         createMiniPokeCars.innerHTML += `<img src = ${element.img}>
                                         <p>${element.name}</p>
                                         <p>Spawn ${element.avg_spawns}</p>`
