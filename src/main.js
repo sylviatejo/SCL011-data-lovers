@@ -14,7 +14,18 @@ buttonPokeComm.addEventListener("click", () => {
 
     //recorrer el nuevo arreglo de 41 pokemones que esta guardado en la variable printPokeComm
     printPokeComm.forEach(element => {
-        container.innerHTML += `<img src = ${element.img}>`
+        //Creando el elemento div que contiene la mini tarjeta pokemon
+        let createMiniPokeCars = document.createElement("div");
+        //Asignando elemento padre al div creado con variable que es el contenedor
+        let asigPadre = document.getElementById("principal"); //deberia ser la caja pokebox
+        //let referencia = document.getElementsByTagName("div")[0];
+        //asignamos atributos de clases dadas en style
+        createMiniPokeCars.setAttribute("class", "classDivMiniCard");
+        //asigPadre.insertBefore(createMiniPokeCars, referencia);
+        asigPadre.appendChild(createMiniPokeCars);
+        createMiniPokeCars.innerHTML += `<img src = ${element.img}>
+                                        <p>${element.name}</p>
+                                        <p>Spawn ${element.avg_spawns}</p>`
     })
 
 })
