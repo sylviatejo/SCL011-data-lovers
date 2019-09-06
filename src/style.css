@@ -1,0 +1,13 @@
+/* Clase para div de mini carta pokemon */
+
+.classDivMiniCard {
+    width: 190px;
+    height: 190px;
+    background: #cac6c6;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 2px solid #aaaaaa;
+    padding: 5px;
+    box-shadow: 2px 2px 5px 1px;
+}
