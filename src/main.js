@@ -12,6 +12,7 @@ const printPokeComm = window.filterPoke.filterPokeCommon(allPokeData);
 //asigna div root a variable container principal como padre
 const container = document.getElementById("principal");
 
+// const prinMediaPoke = window.filterPoke.mediaPokeCal(allPokeData);
 
 
 buttonPokeComm.addEventListener("click", () => {
