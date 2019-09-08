@@ -30,7 +30,7 @@ buttonPokeComm.addEventListener("click", () => {
         asigPadre.appendChild(createMiniPokeCars);
         //Imprimo los valores de las propiedades de la data filtrada
         createMiniPokeCars.innerHTML += `<img src = ${element.img}>
-                                        <p>${element.name}</p>
+                                        <h1>${element.name}</h1>
                                         <p>Spawn ${element.avg_spawns}</p>`
     })
 
