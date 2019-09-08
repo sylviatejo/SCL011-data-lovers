@@ -1,15 +1,63 @@
+/* Tipografía documento */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Clase para div de mini carta pokemon */
 
 .classDivMiniCard {
     width: 190px;
     height: 190px;
-    background: #cac6c6;
+    background-image: linear-gradient(#EEEEEE, #FFFFFF);
     display: inline-block;
-    margin-right: 10px;
-    margin-top: 10px;
-    border: 2px solid #aaaaaa;
+    margin-right: 30px;
+    margin-top: 30px;
+    border-radius: 18px;
     padding: 5px;
-    box-shadow: 2px 2px 5px 1px;
+    box-shadow: 9px 9px 21px -9px #e0fbfd;
+    text-align: center;
+    font-size: 18px;
 }
 
-/* Trabajar acá*/
+/* Estilo Botón Pokemones Comunes*/
+
+.classButt {
+    background-image: url(../src/images/button-pokemon-common.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 300 px;
+    background-position: center;
+    font-size: 60px;
+    display: block;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+}
+
+/* Estilo Botón Pokemones Raros*/
+
+.classButt2 {
+    background-image: url(../src/images/button-pokemon-rare.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 300 px;
+    background-position: center;
+    font-size: 60px;
+    display: block;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 21px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 5px;
+}
+
+p {
+    font-size: 18px;
+}
