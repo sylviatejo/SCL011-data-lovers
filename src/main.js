@@ -1,16 +1,22 @@
 /* Manejo del DOM */
+
 //asignar a una variable total de data pokemon.js
 const allPokeData = POKEMON.pokemon;
 
 //asignar evento al boton pokemon comunes para filtrar y calcular
-const buttonPokeComm = document.getElementById("pokeComm")
-    //Asignar a una variable el resultado del filtro pokemones comunes que fue un nuevo arreglo de 41 pokemones
+const buttonPokeComm = document.getElementById("pokeComm");
+
+//Asignar a una variable el resultado del filtro pokemones comunes que fue un nuevo arreglo de 41 pokemones
 const printPokeComm = window.filterPoke.filterPokeCommon(allPokeData);
+
+//asigna div root a variable container principal como padre
 const container = document.getElementById("principal");
 
 
 
 buttonPokeComm.addEventListener("click", () => {
+
+
 
     //recorrer el nuevo arreglo de 41 pokemones que esta guardado en la variable printPokeComm
     printPokeComm.forEach(element => {
@@ -29,3 +35,9 @@ buttonPokeComm.addEventListener("click", () => {
     })
 
 })
+
+// refrescar index 
+
+//document.getElementById("clear").addEventListener('click', () => {
+//location.reload()
+//});
