@@ -7,9 +7,17 @@ body {
 
 /* Espacio Menú y Color*/
 
-.menu {
+.menuFiltro {
     width: 100%;
     background-color: #EEEEEE;
+}
+
+header {
+    background: #EEEEEE;
+}
+
+header .pokeWelcome {
+    background: #FFFFFF;
 }
 
 /*Desaparecemos el checklist*/
@@ -37,11 +45,50 @@ header label :hover {
 
 /*Estilo lista*/
 
-.menu ul {
+.menuFiltro ul {
     margin: 0;
     list-style: none;
     padding: 0;
     display: flex;
+}
+
+.menuFiltro li {
+border-right: 1px solid #828282;
+}
+
+.menuFiltro li:hover {
+    background: #D3D3D3;
+}
+
+.menuFiltro li a {
+    display: block;
+    padding: 15px 20px;
+    color: #4F4F4F;
+    text-decoration: none;
+}
+
+@media (max-width:768px) {
+    
+    header label {
+        display: block;
+    }
+    .menuFiltro {
+        position: absolute;
+        background: #EEEEEE;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menuFiltro ul {
+        flex-direction: column
+    }
+
+    .menuFiltro li {
+        border-top: 1px solid #828282;
+    }
+    #btn-menu:checked ~ .menuFiltro {
+        margin: 0;
+    }
 }
 
 /* Clase para div de mini carta pokemon */
