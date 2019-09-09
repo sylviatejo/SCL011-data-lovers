@@ -14,16 +14,7 @@ console.log(printPokeComm);
 const container = document.getElementById("principal");
 
 buttonPokeComm.addEventListener("click", () => {
-
-    //crear select de ordenar 
-    let createSelect = document.createElement("select");
-    //deberia ir un for para crear las opciones
-    let padreSelect = document.getElementById("principal");
-    //Atributos del select en texto
-    createContSelect.setAttribute("id", "sortPoke");
-    //agregamos hijo al padre con metodo appendChild
-    padreSelect.appendChild(createSelect);
-
+    crearSelect();
     //recorrer el nuevo arreglo de pokemones que esta guardado en la variable printPokeComm
     printPokeComm.forEach(element => {
         //Creando el elemento div que contiene la mini tarjeta pokemon
@@ -37,8 +28,10 @@ buttonPokeComm.addEventListener("click", () => {
         //Imprimo los valores de las propiedades de la data filtrada
         createMiniPokeCars.innerHTML += `<img src = ${element.img}>
                                         <h1>${element.name}</h1>
-                                        <p>Spawn ${element.avg_spawns}</p>`
-    });
+                                        <p>Spawn % ${element.spawn_chance}</p>
+                                        <p>Hora ${element.spawn_time}</p>`
+    })
+
 
 });
 
@@ -53,7 +46,7 @@ console.log(printPokeRare);
 
 buttonPokeRare.addEventListener("click", () => {
 
-
+    crearSelect();
     //recorrer el nuevo arreglo de  pokemones que esta guardado en la variable printPokeComm
     printPokeRare.forEach(element => {
 
@@ -68,10 +61,35 @@ buttonPokeRare.addEventListener("click", () => {
         //Imprimo los valores de las propiedades de la data filtrada
         createMiniPokeCars.innerHTML += `<img src = ${element.img}>
                                         <h1>${element.name}</h1>
-                                        <p>Spawn ${element.avg_spawns}</p>`
+                                        <p>Spawn % ${element.spawn_chance}</p>
+                                        <p>Hora ${element.spawn_time}</p>`
     });
 
 });
+
+function crearSelect() {
+    //document.getElementById("principal").innerHTML = "hola";
+
+    //crear select de ordenar 
+    let createSelect = document.createElement("select");
+    //deberia ir un for para crear las opciones
+    let padreSelect = document.getElementById("principal");
+    //Atributos del select
+    createSelect.setAttribute("id", "sortPoke");
+    //agregamos hijo al padre con metodo appendChild
+    padreSelect.appendChild(createSelect);
+
+    //crear option de select 
+    let createOptionSelect = document.createElement("option");
+    //deberia ir un for para crear las opciones
+    let padreOptionSelect = document.getElementById("sortPoke");
+    let textoOption = document.createTextNode("Por Nombre");
+    createOptionSelect.appendChild(textoOption);
+    //Atributos de option
+    createOptionSelect.setAttribute("value", "name");
+    //agregamos hijo al padre con metodo appendChild
+    padreOptionSelect.appendChild(createOptionSelect);
+}
 
 // refrescar index 
 

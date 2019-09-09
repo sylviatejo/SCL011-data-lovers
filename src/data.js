@@ -48,6 +48,10 @@ window.data = {
 
         return resultFilterRare; //nuevo arreglo de pokemones mayor a al promedio con todos sus objetos
 
+    },
+
+    sortDataPokeComm: (resultFilterCommons) => {
+
     }
 
 };
