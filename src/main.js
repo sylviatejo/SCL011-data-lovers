@@ -13,14 +13,6 @@ console.log(printPokeComm);
 //asigna div root a variable container principal como padre
 const container = document.getElementById("principal");
 
-/*   
- <select name="sortPoke" id="sortPokemon">
-    <option value="name">Por Nombre</option>
-    <option value="avg_spawns">Por porcentaje de Aparicion</option>
-    <option value="name">Por Hora de Aparicion</option>
-</select>
-*/
-
 buttonPokeComm.addEventListener("click", () => {
 
     //crear select de ordenar 
@@ -31,7 +23,6 @@ buttonPokeComm.addEventListener("click", () => {
     createContSelect.setAttribute("id", "sortPoke");
     //agregamos hijo al padre con metodo appendChild
     padreSelect.appendChild(createSelect);
-
 
     //recorrer el nuevo arreglo de pokemones que esta guardado en la variable printPokeComm
     printPokeComm.forEach(element => {
