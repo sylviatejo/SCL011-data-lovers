@@ -28,3 +28,5 @@ window.filterPoke = {
     }
 
 };
+
+//Hola soy comentario
