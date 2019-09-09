@@ -1,3 +1,10 @@
+/*Quitamos margenes y paddings a toda la página*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Tipografía documento */
 
 body {
@@ -23,7 +30,7 @@ body {
 /* Estilo Botón Pokemones Comunes*/
 
 .classButt {
-    background-image: url(../src/images/button-pokemon-common.png);
+    background-image: url(../src/images/bg-boton-common.jpg);
     background-repeat: no-repeat;
     background-size: 500px;
     height: 350px;
@@ -39,7 +46,7 @@ body {
 /* Estilo Botón Pokemones Raros*/
 
 .classButt2 {
-    background-image: url(../src/images/button-pokemon-rare.png);
+    background-image: url(../src/images/bg-boton-rare.jpg);
     background-repeat: no-repeat;
     background-size: 500px;
     height: 350px;
