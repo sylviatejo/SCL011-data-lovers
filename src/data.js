@@ -5,7 +5,7 @@ window.data = {
 
 
     filterPokeCommon: (allPokeData) => {
-        //console.log(allPokeData);
+        console.log(allPokeData);
 
         const avgSpawns = allPokeData.map(elementAvg => elementAvg.avg_spawns)
             //console.log(avgSpawns);
@@ -21,7 +21,7 @@ window.data = {
             //console.log(filterPoke);
 
         });
-        //console.log(resultFilterCommons);
+
 
         return resultFilterCommons; //nuevo arreglo de pokemones mayor a al promedio con todos sus objetos
 
@@ -50,10 +50,29 @@ window.data = {
 
     },
 
-    sortDataPokeComm: (resultFilterCommons) => {
 
+    /*---var items = [
+      { name: 'Edward', value: 21 },
+      { name: 'Sharpe', value: 37 },
+      { name: 'And', value: 45 },
+      { name: 'The', value: -12 },
+      { name: 'Magnetic', value: 13 },
+      { name: 'Zeros', value: 37 }
+    ];
+    items.sort(function (a, b) {
+      if (a.name > b.name) {
+        return 1;
+      }
+      if (a.name < b.name) {
+        return -1;
+      }
+      // a must be equal to b
+      return 0;
+    });  ---*/
+
+
+    sortFilterPokeCommon: () => {
+        document.getElementById("principal").innerHTML = "hola";
     }
 
 };
-
-//Hola soy comentario

@@ -8,7 +8,7 @@ const buttonPokeComm = document.getElementById("pokeComm");
 
 //Asignar a una variable el resultado del filtro pokemones comunes que fue un nuevo arreglo de 41 pokemones
 const printPokeComm = window.data.filterPokeCommon(allPokeData);
-console.log(printPokeComm);
+//console.log(printPokeComm);
 
 //asigna div root a variable container principal como padre
 const container = document.getElementById("principal");
@@ -41,7 +41,7 @@ const buttonPokeRare = document.getElementById("pokeRare");
 
 //Asignar a una variable el resultado del filtro pokemones inusuales que fue un nuevo arreglo de 41 pokemones
 const printPokeRare = window.data.filterPokeRare(allPokeData);
-console.log(printPokeRare);
+//console.log(printPokeRare);
 
 
 buttonPokeRare.addEventListener("click", () => {
@@ -89,7 +89,12 @@ function crearSelect() {
     createOptionSelect.setAttribute("value", "name");
     //agregamos hijo al padre con metodo appendChild
     padreOptionSelect.appendChild(createOptionSelect);
-}
+};
+
+
+//Asignar a una variable el resultado del filtro pokemones comunes que fue un nuevo arreglo de 41 pokemones
+
+//const sortPokeComm = window.data.sorFilterPokeCommon();
 
 // refrescar index 
 

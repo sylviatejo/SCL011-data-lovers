@@ -1,15 +1,9 @@
-/*Quitamos margenes y paddings a toda la página*/
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 /* Tipografía documento */
 
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 
 /* Clase para div de mini carta pokemon */
 
@@ -27,6 +21,7 @@ body {
     font-size: 18px;
 }
 
+
 /* Estilo Botón Pokemones Comunes*/
 
 .classButt {
@@ -42,6 +37,7 @@ body {
     color: transparent;
     cursor: pointer;
 }
+
 
 /* Estilo Botón Pokemones Raros*/
 
@@ -59,6 +55,7 @@ body {
     cursor: pointer;
 }
 
+
 /*Estilo Nombre Pokemon Mini Card*/
 
 h1 {
@@ -70,6 +67,7 @@ h1 {
     color: #213037;
 }
 
+
 /*Estilo Info secundaria Pokemon Mini Card*/
 
 p {
@@ -79,6 +77,7 @@ p {
     line-height: 1px;
     color: #828282;
 }
+
 
 /*#slide_nav {
     background-color:black;
