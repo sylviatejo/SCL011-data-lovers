@@ -25,10 +25,11 @@ body {
 .classButt {
     background-image: url(../src/images/button-pokemon-common.png);
     background-repeat: no-repeat;
-    height: 400px;
+    background-size: 500px;
+    height: 350px;
     width: 300 px;
     background-position: center;
-    font-size: 60px;
+    font-size: 50px;
     display: block;
     border: none;
     color: transparent;
@@ -40,10 +41,11 @@ body {
 .classButt2 {
     background-image: url(../src/images/button-pokemon-rare.png);
     background-repeat: no-repeat;
-    height: 400px;
+    background-size: 500px;
+    height: 350px;
     width: 300 px;
     background-position: center;
-    font-size: 60px;
+    font-size: 50px;
     display: block;
     border: none;
     color: transparent;
