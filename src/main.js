@@ -1,7 +1,7 @@
 /* Manejo del DOM */
 
 //asignar a una variable total de data pokemon.js
-const allPokeData = POKEMON.pokemon;
+const allPokeData = window.POKEMON.pokemon;
 
 //asignar evento al boton pokemon comunes para filtrar y calcular
 const buttonPokeComm = document.getElementById("pokeComm");
@@ -50,6 +50,7 @@ buttonPokeRare.addEventListener("click", () => {
 
     //recorrer el nuevo arreglo de  pokemones que esta guardado en la variable printPokeComm
     printPokeRare.forEach(element => {
+
         //Creando el elemento div que contiene la mini tarjeta pokemon
         let createMiniPokeCars = document.createElement("div");
         //Asignando elemento padre al div creado con variable que es el contenedor
