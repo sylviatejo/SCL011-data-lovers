@@ -68,7 +68,6 @@ buttonPokeRare.addEventListener("click", () => {
 });
 
 function crearSelect() {
-    //document.getElementById("principal").innerHTML = "hola";
 
     //crear select de ordenar 
     let createSelect = document.createElement("select");
@@ -91,10 +90,19 @@ function crearSelect() {
     padreOptionSelect.appendChild(createOptionSelect);
 };
 
+/*
 
 //Asignar a una variable el resultado del filtro pokemones comunes que fue un nuevo arreglo de 41 pokemones
 
-//const sortPokeComm = window.data.sorFilterPokeCommon();
+const selectOrderPoke = document.getElementById("sortPoke");
+selectOrderPoke.addEventListener("change", () => {
+    let valueName = document.getElementById("sortPoke").value;
+    const sortPokeComm = window.data.sortFilterPokeCommon(allPokeData, valueName);
+    console.log(sortPokeComm);
+    //sortPokeComm.padreSelect.innerHTML
+});
+
+*/
 
 // refrescar index 
 

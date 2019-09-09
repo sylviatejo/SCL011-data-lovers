@@ -71,8 +71,18 @@ window.data = {
     });  ---*/
 
 
-    sortFilterPokeCommon: () => {
-        document.getElementById("principal").innerHTML = "hola";
+    sortFilterPokeCommon: (allPokeData) => {
+        console.log(allPokeData);
+        const sortPoke = allPokeData.sort(function(a, b) {
+            if (a.name > b.name) {
+                return 1;
+            }
+            if (a.name < b.name) {
+                return -1;
+            }
+
+        });
+        console.log(sortPoke);
     }
 
 };
