@@ -81,7 +81,7 @@ window.data = {
             }
 
         });
-        console.log(sortPoke);
+        //console.log(sortPoke);
     }
 
 };
