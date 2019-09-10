@@ -24,6 +24,7 @@ body {
 
 .container .header {
     grid-area: header;
+    text-align: center;
 }
 
 .container .content {
@@ -41,6 +42,8 @@ body {
 .menuFiltro {
     width: 100%;
     background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
 }
 
 /*Color fondo para eliminar gris*/
@@ -103,7 +106,7 @@ border-right: 1px solid #828282;
 
 .menuFiltro li a {
     display: block;
-    padding: 15px 20px;
+    padding: 15px 100px;
     color: #4F4F4F;
     text-decoration: none;
 }
@@ -147,7 +150,7 @@ border-right: 1px solid #828282;
     }
 }
 
-/*PÁGINA RESPONSIVE*/
+/*PÁGINA RESPONSIVE TABLET*/
 
 @media screen and (max-width: 768px) {
 
@@ -187,10 +190,12 @@ border-right: 1px solid #828282;
     width: 300 px;
     background-position: center;
     font-size: 50px;
-    display: block;
+    display: inline;
     border: none;
     color: transparent;
     cursor: pointer;
+    margin: 30px;
+    
 }
 
 /* Estilo Botón Pokemones Raros*/
@@ -204,10 +209,11 @@ border-right: 1px solid #828282;
     width: 300 px;
     background-position: center;
     font-size: 50px;
-    display: block;
+    display: inline;
     border: none;
     color: transparent;
     cursor: pointer;
+    margin: 30px;
 }
 
 /*Estilo Nombre Pokemon Mini Card*/
@@ -229,4 +235,17 @@ p {
     font-weight: 100;
     line-height: 1px;
     color: #828282;
+}
+
+h2 {
+    text-align: center;
+    color: #828282;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
 }
