@@ -15,7 +15,7 @@ const container = document.getElementById("principal");
 
 buttonPokeComm.addEventListener("click", () => {
 
-    crearSelect();
+
 
     //recorrer el nuevo arreglo de pokemones que esta guardado en la variable printPokeComm
     printPokeComm.forEach(element => {
@@ -48,7 +48,7 @@ const printPokeRare = window.data.filterPokeRare(allPokeData);
 
 buttonPokeRare.addEventListener("click", () => {
 
-    crearSelect();
+
     //recorrer el nuevo arreglo de  pokemones que esta guardado en la variable printPokeComm
     printPokeRare.forEach(element => {
 
@@ -99,13 +99,17 @@ function crearSelect() {
 }
 */
 
-/*let selectOrderPoke = document.getElementById("sortPoke");
-    document.getElementById("sortPoke").addEventListener("change", );
-let valueName = document.getElementById("sortPoke").value;
-console.log(valueName);
-document.getElementById("principal").innerHTML = window.data.sortFilterPokeCommon(valueName);*/
+const contOrderPoke = document.getElementById("idSelect");
+const selectOrderPoke = document.getElementById("sortPoke");
+selectOrderPoke.addEventListener("change", () => {
+    let valueOrder = document.getElementById("sortPoke").value;
 
-//document.getElementById("sortPoke").addEventListener("change", crearSelect);
+    contOrderPoke.innerHTML = window.data.sortFilterPokeCommon(allPokeData, valueOrder);
+});
+
+
+
+
 
 
 

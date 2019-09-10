@@ -13,47 +13,54 @@
 
     <div class="container">
 
-    <!--Logotipo -->
+        <!--Logotipo -->
 
-    <header class="header">
+        <header class="header">
 
-        <div class="pokeWelcome">
-            <a title="Home" href="../src/index.html"><img src="../src/images/pokemon-header-pequeno.png" alt="Home Pokemon "></a>
-        </div>
+            <div class="pokeWelcome">
+                <a title="Home" href="../src/index.html"><img src="../src/images/pokemon-header-pequeno.png" alt="Home Pokemon "></a>
+            </div>
 
-        <input type="checkbox" id="btn-menu">
-        
-        <label for="btn-menu"><img src="../src/images/menu-resposive.png" height="30">
+            <input type="checkbox" id="btn-menu">
+
+            <label for="btn-menu"><img src="../src/images/menu-resposive.png" height="30">
         </label>
 
-        <nav class="menuFiltro">
-            <ul>
-                <li><a href="#">TIPO</a></li>
-                <li><a href="#">NOMBRE</a></li>
-                <li><a href="#">NÚMERO</a></li>
-                <li><a href="#">HOME</a></li>
-            </ul>
-        </nav>
+            <nav class="menuFiltro">
+                <ul>
+                    <li><a href="#">TIPO</a></li>
+                    <li><a href="#">NOMBRE</a></li>
+                    <li><a href="#">NÚMERO</a></li>
+                    <li><a href="#">HOME</a></li>
+                </ul>
+            </nav>
 
-        <div class="select" id="idSelect"></div>
+            <div class="select" id="idSelect">
+                <select name="pokeSlect" id="sortPoke">
+                <option selected disabled>Seleccione Orden</option>
+                <option value="name">Por Nombre</option>
+                <option value="spawn_chance">Por %Spawns</option>
+                <option value="spawn_time">Por Hora Spawns</option>
+            </select>
+            </div>
 
-    </header>
+        </header>
 
         <main class="content">
 
-        <!--Botón Pokemones Comunes-->
-        <button class="classButt" id="pokeComm">Pokemones Comunes</button>
+            <!--Botón Pokemones Comunes-->
+            <button class="classButt" id="pokeComm">Pokemones Comunes</button>
 
-        <!--Botón Pokemones Raros-->
-        <button class="classButt2" id="pokeRare">Pokemones Inusuales</button>
+            <!--Botón Pokemones Raros-->
+            <button class="classButt2" id="pokeRare">Pokemones Inusuales</button>
 
-        <!--root-->
-        <div id="principal"></div>
-    </main>
+            <!--root-->
+            <div id="principal"></div>
+        </main>
 
-    <footer class="footer">
-        <p>Creado por Marielys y Sylvia. Laboratoria 2019</p>
-    </footer>
+        <footer class="footer">
+            <h2>Creado por Marielys y Sylvia. Laboratoria 2019</h2>
+        </footer>
     </div>
 
     <!--Javascript-->
