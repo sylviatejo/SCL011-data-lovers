@@ -134,7 +134,7 @@ border-right: 1px solid #828282;
     /*Indicamos que el menú se vea como columna*/
 
     .menuFiltro ul {
-        flex-direction: column
+        flex-direction: column;
     }
 
     /*Líneas separadoras del menú hamburguesa*/
