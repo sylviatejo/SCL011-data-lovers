@@ -70,7 +70,7 @@ buttonPokeRare.addEventListener("click", () => {
 });
 
 
-
+/*
 function crearSelect() {
     //crear select de ordenar 
     let createSelect = document.createElement("select");
@@ -97,6 +97,8 @@ function crearSelect() {
     container.innerHTML = window.data.sortFilterPokeCommon(valueName);
 
 }
+*/
+
 /*let selectOrderPoke = document.getElementById("sortPoke");
     document.getElementById("sortPoke").addEventListener("change", );
 let valueName = document.getElementById("sortPoke").value;
@@ -105,21 +107,9 @@ document.getElementById("principal").innerHTML = window.data.sortFilterPokeCommo
 
 //document.getElementById("sortPoke").addEventListener("change", crearSelect);
 
-/*
-function startSelect() {
-    //let selectOrderPoke = document.getElementById("name").value;
-    //console.log(selectOrderPoke);
-
-}
-*/
 
 
-//const selectOrderPoke = document.getElementById("sortPoke");
-//selectOrderPoke.addEventListener("change", () => {
-// let valueName = document.getElementById("sortPoke").value;
-//const sortPokeComm = window.data.sortFilterPokeCommon(allPokeData);
-//console.log(sortPokeComm);
-//});
+
 
 
 
