@@ -3,18 +3,22 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poke Me</title>
-    <link rel="stylesheet" href="../src/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <div class="container">
+
     <!--Logotipo -->
 
-    <header>
+    <header class="header">
+
         <div class="pokeWelcome">
-            <a title="Home" href="../src/index.html"><img src="../src/images/pokemon-header.png" alt="Home Pokemon " height="300"></a>
+            <a title="Home" href="../src/index.html"><img src="../src/images/pokemon-header.png" alt="Home Pokemon "></a>
         </div>
 
         <input type="checkbox" id="btn-menu">
@@ -30,22 +34,12 @@
                 <li><a href="#">HOME</a></li>
             </ul>
         </nav>
-        </div>
+
+        <div class="select" id="idSelect"></div>
+
     </header>
 
-
-
-        <!--<div id='slide_nav'>
-                <p id="slide_nav_button">☰</p>
-                </div>
-                <ul id='slide_menu'>
-                <li><a href="#">FILTRAR POR</a></li>
-                <li><a href="#">Tipo</a></li>
-                <li><a href="#">Nombre</a></li>
-                <li><a href="#">Número</a></li>
-                <li><a href="../src/index.html">Volver</a></li>
-                </ul>-->
-                
+        <main class="content">
 
         <!--Botón Pokemones Comunes-->
         <button class="classButt" id="pokeComm">Pokemones Comunes</button>
@@ -53,15 +47,14 @@
         <!--Botón Pokemones Raros-->
         <button class="classButt2" id="pokeRare">Pokemones Inusuales</button>
 
-
         <!--root-->
         <div id="principal"></div>
+    </main>
 
-    </section>
-
-    <footer>
+    <footer class="footer">
         <p>Creado por Marielys y Sylvia. Laboratoria 2019</p>
     </footer>
+    </div>
 
     <!--Javascript-->
 

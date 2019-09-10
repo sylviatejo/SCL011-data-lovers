@@ -5,6 +5,37 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*Estilo Contenedor*/
+
+.container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header header"
+                        "content content content"
+                        "content content content"
+                        "footer footer footer"
+}
+
+.container .header {
+    grid-area: header;
+}
+
+.container .content {
+    grid-area: content;
+}
+
+.container .footer {
+    background: #EEEEEE;
+    color: #213037;
+    grid-area: footer;
+}
+
 /* Espacio Menú y Color*/
 
 .menuFiltro {
@@ -12,9 +43,13 @@ body {
     background-color: #EEEEEE;
 }
 
+/*Color fondo para eliminar gris*/
+
 header {
     background: #EEEEEE;
 }
+
+/*Color fondo para eliminar gris*/
 
 header .pokeWelcome {
     background: #FFFFFF;
@@ -52,13 +87,19 @@ header label :hover {
     display: flex;
 }
 
+/* Estilo items lista*/
+
 .menuFiltro li {
 border-right: 1px solid #828282;
 }
 
+/*Efecto hover menu*/
+
 .menuFiltro li:hover {
     background: #D3D3D3;
 }
+
+/*Estilo texto items menu*/
 
 .menuFiltro li a {
     display: block;
@@ -67,27 +108,55 @@ border-right: 1px solid #828282;
     text-decoration: none;
 }
 
+/*menu responsive*/
+
 @media (max-width:768px) {
     
+    /*Hacemos aparecer el ícono menú hamburguesa*/
+
     header label {
         display: block;
     }
+
+    /*Estilo y posición menú hamburguesa*/
+
     .menuFiltro {
         position: absolute;
         background: #EEEEEE;
         width: 70%;
-        margin-left: -70%;
+        margin-left: -80%;
         transition: all 0.5s;
     }
+
+    /*Indicamos que el menú se vea como columna*/
+
     .menuFiltro ul {
         flex-direction: column
     }
 
+    /*Líneas separadoras del menú hamburguesa*/
+
     .menuFiltro li {
         border-top: 1px solid #828282;
     }
+
+    /*Indicamos que check busque a menú filtro*/
+
     #btn-menu:checked ~ .menuFiltro {
         margin: 0;
+    }
+}
+
+/*PÁGINA RESPONSIVE*/
+
+@media screen and (max-width: 768px) {
+
+    .container {
+
+        grid-template-areas: "header header header"
+                            "content content content"
+                            "content content content"
+                            "footer footer footer"
     }
 }
 
@@ -113,6 +182,7 @@ border-right: 1px solid #828282;
     background-image: url(../src/images/bg-boton-common.jpg);
     background-repeat: no-repeat;
     background-size: 500px;
+    background-color: #FFFFFF;
     height: 350px;
     width: 300 px;
     background-position: center;
@@ -129,6 +199,7 @@ border-right: 1px solid #828282;
     background-image: url(../src/images/bg-boton-rare.jpg);
     background-repeat: no-repeat;
     background-size: 500px;
+    background-color: #FFFFFF;
     height: 350px;
     width: 300 px;
     background-position: center;
