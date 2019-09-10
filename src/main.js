@@ -14,7 +14,9 @@ const printPokeComm = window.data.filterPokeCommon(allPokeData);
 const container = document.getElementById("principal");
 
 buttonPokeComm.addEventListener("click", () => {
+
     crearSelect();
+
     //recorrer el nuevo arreglo de pokemones que esta guardado en la variable printPokeComm
     printPokeComm.forEach(element => {
         //Creando el elemento div que contiene la mini tarjeta pokemon
@@ -67,8 +69,9 @@ buttonPokeRare.addEventListener("click", () => {
 
 });
 
-function crearSelect() {
 
+
+function crearSelect() {
     //crear select de ordenar 
     let createSelect = document.createElement("select");
     //deberia ir un for para crear las opciones
@@ -88,24 +91,42 @@ function crearSelect() {
     createOptionSelect.setAttribute("value", "name");
     //agregamos hijo al padre con metodo appendChild
     padreOptionSelect.appendChild(createOptionSelect);
-};
+
+    let valueName = document.getElementById("sortPoke").value;
+    console.log(valueName);
+    container.innerHTML = window.data.sortFilterPokeCommon(valueName);
+
+}
+/*let selectOrderPoke = document.getElementById("sortPoke");
+    document.getElementById("sortPoke").addEventListener("change", );
+let valueName = document.getElementById("sortPoke").value;
+console.log(valueName);
+document.getElementById("principal").innerHTML = window.data.sortFilterPokeCommon(valueName);*/
+
+//document.getElementById("sortPoke").addEventListener("change", crearSelect);
 
 /*
+function startSelect() {
+    //let selectOrderPoke = document.getElementById("name").value;
+    //console.log(selectOrderPoke);
 
-//Asignar a una variable el resultado del filtro pokemones comunes que fue un nuevo arreglo de 41 pokemones
-
-const selectOrderPoke = document.getElementById("sortPoke");
-selectOrderPoke.addEventListener("change", () => {
-    let valueName = document.getElementById("sortPoke").value;
-    const sortPokeComm = window.data.sortFilterPokeCommon(allPokeData, valueName);
-    console.log(sortPokeComm);
-    //sortPokeComm.padreSelect.innerHTML
-});
-
+}
 */
 
-// refrescar index 
 
+//const selectOrderPoke = document.getElementById("sortPoke");
+//selectOrderPoke.addEventListener("change", () => {
+// let valueName = document.getElementById("sortPoke").value;
+//const sortPokeComm = window.data.sortFilterPokeCommon(allPokeData);
+//console.log(sortPokeComm);
+//});
+
+
+
+
+
+
+// refrescar index 
 //document.getElementById("clear").addEventListener('click', () => {
 //location.reload()
 //});

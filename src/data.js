@@ -5,7 +5,7 @@ window.data = {
 
 
     filterPokeCommon: (allPokeData) => {
-        console.log(allPokeData);
+        //console.log(allPokeData);
 
         const avgSpawns = allPokeData.map(elementAvg => elementAvg.avg_spawns)
             //console.log(avgSpawns);
@@ -72,8 +72,7 @@ window.data = {
 
 
     sortFilterPokeCommon: (allPokeData) => {
-        console.log(allPokeData);
-        const sortPoke = allPokeData.sort(function(a, b) {
+        const sortPoke = POKEMON.pokemon.sort(function(a, b) {
             if (a.name > b.name) {
                 return 1;
             }
