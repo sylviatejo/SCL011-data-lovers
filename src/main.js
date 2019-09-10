@@ -15,7 +15,7 @@ const container = document.getElementById("principal");
 
 buttonPokeComm.addEventListener("click", () => {
 
-    crearSelect();
+
 
     //recorrer el nuevo arreglo de pokemones que esta guardado en la variable printPokeComm
     printPokeComm.forEach(element => {
@@ -48,7 +48,7 @@ const printPokeRare = window.data.filterPokeRare(allPokeData);
 
 buttonPokeRare.addEventListener("click", () => {
 
-    crearSelect();
+
     //recorrer el nuevo arreglo de  pokemones que esta guardado en la variable printPokeComm
     printPokeRare.forEach(element => {
 
