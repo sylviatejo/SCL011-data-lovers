@@ -53,7 +53,7 @@ window.data = {
 
 
 
-    
+    /*
         sortFilterPokeCommon: (allPokeData, sortby, sortPoke) => {
             let sortPoke = allPokeData.sort(function(a, b) {
                 if (a.name > b.name) {
@@ -65,6 +65,6 @@ window.data = {
 
             });
             //console.log(sortPoke);
-        }
+        }*/
 
 };
