@@ -1,10 +1,6 @@
 //asignar a una variable total de data pokemon.js
 const allPokeData = window.POKEMON.pokemon;
 const mediaPoke = window.data.pokeMedia(allPokeData);
-let ordenPokemonEnd = document.getElementById("idSelect");
-
-
-
 //asignar evento al boton pokemon comunes para filtrar y calcular
 const buttonPokeComm = document.getElementById("pokeComm");
 
@@ -19,14 +15,14 @@ const buttonPokeRare = document.getElementById("pokeRare");
 const printPokeRare = window.data.filterPokeRare(allPokeData, mediaPoke);
 //console.log(printPokeRare);
 
-const buttonfindMe = document.getElementById("findMe");
+const buttonFindMe = document.getElementById("findMe");
 
 
 
 
 
 
-buttonFindMe.addEventListener("click", () => {
+buttonPokeComm.addEventListener("click", () => {
 
     document.getElementById("divButton2").innerHTML = "";
 
@@ -79,12 +75,12 @@ buttonPokeRare.addEventListener("click", () => {
 
 // mostar data completa con boton
 
-buttonfindMe.addEventListener("click", () => {
+buttonFindMe.addEventListener("click", () => {
 
     document.getElementById("pokeBox").innerHTML = "";
 
     //recorrer el nuevo arreglo de  pokemones que esta guardado en la variable printPokeComm
-    printPokeRare.forEach(element => {
+    allPokeData.forEach(element => {
 
         //Creando el elemento div que contiene la mini tarjeta pokemon
         let createMiniPokeCars = document.createElement("div");
