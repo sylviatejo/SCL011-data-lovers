@@ -184,7 +184,7 @@ border-right: 1px solid #828282;
 
   .container .pokeWelcome {
       grid-area: header;
-      width: 50%;
+      width: 100%;
   }
 }
 
@@ -274,5 +274,6 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
 
 /*COMENTARIO*/

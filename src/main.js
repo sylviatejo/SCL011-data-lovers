@@ -20,14 +20,7 @@ const buttonPokeRare = document.getElementById("pokeRare");
 const printPokeRare = window.data.filterPokeRare(allPokeData, mediaPoke);
 //console.log(printPokeRare);
 
-/*asigna div root a variable container principal como padre
-const container = document.getElementById("principal");
 
-const buttonBlock = document.getElementById("divbuttons");
-const containerPoke = document.getElementById("pokeComm")
-containerPoke.addEventListener("click", () => {
-    buttonBlock.style.display = "block";
-});*/
 
 
 
