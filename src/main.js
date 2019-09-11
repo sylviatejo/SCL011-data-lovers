@@ -93,7 +93,7 @@ function ordenPoke() {
     let sorPoke = document.getElementById("sortPokemon").value;
 
     let ordenPokemonEnd = window.data.sortPokemon((window.data.filterPokeCommon(allPokeData, mediaPoke)), sorPoke);
-    console.log(orderPokemonEnd);
+    //console.log(orderPokemonEnd);
     //imprimir
 
     document.getElementById("principal").innerHTML = "";
