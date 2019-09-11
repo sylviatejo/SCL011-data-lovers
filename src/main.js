@@ -1,8 +1,7 @@
 //asignar a una variable total de data pokemon.js
 const allPokeData = window.POKEMON.pokemon;
 const mediaPoke = window.data.pokeMedia(allPokeData);
-//const resultFilterCommons = window.data.sortPokemon();
-let ordenPokemonEnd;
+let ordenPokemonEnd = document.getElementById("idSelect");
 
 
 
@@ -26,7 +25,7 @@ const printPokeRare = window.data.filterPokeRare(allPokeData, mediaPoke);
 
 buttonPokeComm.addEventListener("click", () => {
 
-    document.getElementById("principal").innerHTML = "";
+    document.getElementById("divButton2").innerHTML = "";
 
     //recorrer el nuevo arreglo de pokemones que esta guardado en la variable printPokeComm
     printPokeComm.forEach(element => {
@@ -52,7 +51,7 @@ buttonPokeComm.addEventListener("click", () => {
 
 buttonPokeRare.addEventListener("click", () => {
 
-    document.getElementById("principal").innerHTML = "";
+    document.getElementById("divButton1").innerHTML = "";
 
     //recorrer el nuevo arreglo de  pokemones que esta guardado en la variable printPokeComm
     printPokeRare.forEach(element => {
@@ -76,7 +75,7 @@ buttonPokeRare.addEventListener("click", () => {
 
 
 // ordenar
-document.getElementById("sortPokemon").addEventListener("change", ordenPoke);
+document.getElementById("idSelect").addEventListener("change", ordenPoke);
 document.getElementById("principal").innerHTML = "";
 
 function ordenPoke() {
@@ -85,7 +84,7 @@ function ordenPoke() {
     //asiganr variable del valor de select
     let sorPoke = document.getElementById("sortPokemon").value;
 
-    let ordenPokemonEnd = window.data.sortPokemon((window.data.filterPokeCommon(allPokeData, mediaPoke)), sorPoke);
+    ordenPokemonEnd = window.data.sortPokemon(resultFilterCommons, sorPoke.value);
     //console.log(orderPokemonEnd);
     //imprimir
 
