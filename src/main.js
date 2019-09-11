@@ -1,6 +1,8 @@
 //asignar a una variable total de data pokemon.js
 const allPokeData = window.POKEMON.pokemon;
 const mediaPoke = window.data.pokeMedia(allPokeData);
+//const resultFilterCommons = window.data.sortPokemon();
+let ordenPokemonEnd;
 
 
 
@@ -9,7 +11,7 @@ const buttonPokeComm = document.getElementById("pokeComm");
 
 //Asignar a una variable el resultado del filtro pokemones comunes que fue un nuevo arreglo de 41 pokemones
 const printPokeComm = window.data.filterPokeCommon(allPokeData, mediaPoke);
-console.log(printPokeComm);
+//console.log(printPokeComm);
 
 //asignar evento al boton pokemon raros para filtrar y calcular
 const buttonPokeRare = document.getElementById("pokeRare");
@@ -90,8 +92,8 @@ function ordenPoke() {
     //asiganr variable del valor de select
     let sorPoke = document.getElementById("sortPokemon").value;
 
-    let ordenPokemonEnd = window.data.sortPokemon(printPokeComm, sorPoke);
-
+    let ordenPokemonEnd = window.data.sortPokemon((window.data.filterPokeCommon(allPokeData, mediaPoke)), sorPoke);
+    console.log(orderPokemonEnd);
     //imprimir
 
     document.getElementById("principal").innerHTML = "";

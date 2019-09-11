@@ -50,8 +50,17 @@ window.data = {
 
 
     sortPokemon: (resultFilterCommons, sortPoke) => {
+        if (sortPoke === 'name') {
+            const sortPokemones1 = resultFilterCommons.sort((a, b) => {
+                return (a.name < b.name) ? -1 : 1
+            })
+            return sortPokemones1;
+        }
 
-        sortPoke = resultFilterCommons.sort(function(a, b) {
+
+
+        /*
+       const sortPokemones1 = resultFilterCommons.sort(function(a, b) {
             if (a.name > b.name) {
                 return 1;
             }
@@ -60,7 +69,8 @@ window.data = {
             }
 
         });
-        console.log(sortPoke);
-    }
+        console.log(sortPokemones1);
+    }*/
 
+    }
 };
