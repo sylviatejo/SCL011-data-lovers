@@ -79,9 +79,9 @@ buttonPokeRare.addEventListener("click", () => {
 
 // mostar data completa con boton
 
-buttonPokeRare.addEventListener("click", () => {
+buttonfindMe.addEventListener("click", () => {
 
-    document.getElementById("divButton1").innerHTML = "";
+    document.getElementById("pokeBox").innerHTML = "";
 
     //recorrer el nuevo arreglo de  pokemones que esta guardado en la variable printPokeComm
     printPokeRare.forEach(element => {
