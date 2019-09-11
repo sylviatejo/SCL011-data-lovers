@@ -19,11 +19,14 @@ const buttonPokeRare = document.getElementById("pokeRare");
 const printPokeRare = window.data.filterPokeRare(allPokeData, mediaPoke);
 //console.log(printPokeRare);
 
+const buttonfindMe = document.getElementById("findMe");
 
 
 
 
-buttonPokeComm.addEventListener("click", () => {
+
+
+buttonFindMe.addEventListener("click", () => {
 
     document.getElementById("divButton2").innerHTML = "";
 
@@ -74,32 +77,28 @@ buttonPokeRare.addEventListener("click", () => {
 });
 
 
-// ordenar
-document.getElementById("idSelect").addEventListener("change", ordenPoke);
-document.getElementById("principal").innerHTML = "";
+// mostar data completa con boton
 
-function ordenPoke() {
-    //contenedor de las card ordenadas
-    const contOrderPoke = document.getElementById("principal");
-    //asiganr variable del valor de select
-    let sorPoke = document.getElementById("sortPokemon").value;
+buttonPokeRare.addEventListener("click", () => {
 
-    ordenPokemonEnd = window.data.sortPokemon(resultFilterCommons, sorPoke.value);
-    //console.log(orderPokemonEnd);
-    //imprimir
+    document.getElementById("divButton1").innerHTML = "";
 
-    document.getElementById("principal").innerHTML = "";
+    //recorrer el nuevo arreglo de  pokemones que esta guardado en la variable printPokeComm
+    printPokeRare.forEach(element => {
 
-    ordenPokemonEnd.forEach(element => {
-
-        contOrderPoke.innerHTML +=
-            `<div class="classDivMiniCard">
-            <img src = ${element.img}>
-            <h1>${element.name}</h1>
-            <p>Spawn % ${element.spawn_chance}</p>
-            <p>Hora ${element.spawn_time}</p>
-            </div>`
+        //Creando el elemento div que contiene la mini tarjeta pokemon
+        let createMiniPokeCars = document.createElement("div");
+        //Asignando elemento padre al div creado con variable que es el contenedor
+        let asigPadre = document.getElementById("principal"); //deberia ser la caja pokebox
+        //asignamos atributos de clases dadas en style
+        createMiniPokeCars.setAttribute("class", "classDivMiniCard");
+        //agregamos hijo al padre con metodo appendChild
+        asigPadre.appendChild(createMiniPokeCars);
+        //Imprimo los valores de las propiedades de la data filtrada
+        createMiniPokeCars.innerHTML += `<img src = ${element.img}>
+                                        <h1>${element.name}</h1>
+                                        <p>Spawn % ${element.spawn_chance}</p>
+                                        <p>Hora ${element.spawn_time}</p>`
     });
 
-
-};
+});
