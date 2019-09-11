@@ -33,7 +33,7 @@ body {
 
 .container .pokemonBox {
     grid-area: pokemonBox;
-    height: 1000px;
+    height: auto;
 }
 
 .container .footer {
@@ -157,7 +157,7 @@ border-right: 1px solid #828282;
 
         grid-template-areas: "header header header"
                             "content content content"
-                            "content content content"
+                            "pokemonBox pokemonBox pokemonBox"
                             "footer footer footer"
     }
 
@@ -185,6 +185,12 @@ border-right: 1px solid #828282;
       grid-area: header;
       width: 100%;
   }
+
+  .container .pokemonBox {
+      grid-area: pokemonBox;
+  }
+
+
 }
 
 /* Clase para div de mini carta pokemon */
