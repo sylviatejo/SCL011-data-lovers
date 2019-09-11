@@ -126,7 +126,7 @@ border-right: 1px solid #828282;
     .menuFiltro {
         position: absolute;
         background: #EEEEEE;
-        width: 70%;
+        width: 55%;
         margin-left: -80%;
         transition: all 0.5s;
     }
@@ -161,6 +161,31 @@ border-right: 1px solid #828282;
                             "content content content"
                             "footer footer footer"
     }
+
+  .container .classButt {
+
+    grid-area: content;
+    background-size: 100%;
+    margin: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .container .classButt2 {
+
+    grid-area: content;
+    background-size: 100%;
+    margin: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .container .pokeWelcome {
+      grid-area: header;
+      width: 50%;
+  }
 }
 
 /* Clase para div de mini carta pokemon */
