@@ -68,7 +68,7 @@ buttonPokeRare.addEventListener("click", () => {
                                         <h1>${element.name}</h1>
                                         <p>Spawn % ${element.spawn_chance}</p>
                                         <p>Hora ${element.spawn_time}</p>`
-    });
+    })
 
 });
 
@@ -78,6 +78,28 @@ buttonPokeRare.addEventListener("click", () => {
 buttonFindMe.addEventListener("click", () => {
 
     document.getElementById("pokeBox").innerHTML = "";
+
+
+    //crear select de ordenar 
+    let createSelect = document.createElement("select");
+    //deberia ir un for para crear las opciones
+    let padreSelect = document.getElementById("principal");
+    //Atributos del select
+    createSelect.setAttribute("id", "sortPoke");
+    //agregamos hijo al padre con metodo appendChild
+    padreSelect.appendChild(createSelect);
+
+    //crear option de select 
+    let createOptionSelect = document.createElement("option");
+    //deberia ir un for para crear las opciones
+    let padreOptionSelect = document.getElementById("sortPoke");
+    let textoOption = document.createTextNode("Por Nombre");
+    createOptionSelect.appendChild(textoOption);
+    //Atributos de option
+    createOptionSelect.setAttribute("value", "name");
+    //agregamos hijo al padre con metodo appendChild
+    padreOptionSelect.appendChild(createOptionSelect);
+
 
     //recorrer el nuevo arreglo de  pokemones que esta guardado en la variable printPokeComm
     allPokeData.forEach(element => {
