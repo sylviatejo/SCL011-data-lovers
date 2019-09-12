@@ -73,7 +73,7 @@ buttonPokeRare.addEventListener("click", () => {
 });
 
 
-// mostar data completa con boton
+// mostar data completa con boton findme
 
 buttonFindMe.addEventListener("click", () => {
 
@@ -88,8 +88,19 @@ buttonFindMe.addEventListener("click", () => {
     createSelect.setAttribute("id", "sortPoke");
     //agregamos hijo al padre con metodo appendChild
     padreSelect.appendChild(createSelect);
+    /*
+        //crear option selected de select 
+        let createOptionSelect = document.createElement("option");
+        //deberia ir un for para crear las opciones
+        let padreOptionSelect = document.getElementById("sortPoke");
+        let textoOption = document.createTextNode("Por Nombre");
+        createOptionSelect.appendChild(textoOption);
+        //Atributos de option
+        createOptionSelect.setAttribute("selected disabled", "selected");
+        //agregamos hijo al padre con metodo appendChild
+        padreOptionSelect.appendChild(createOptionSelect);*/
 
-    //crear option de select 
+    //crear option name de select 
     let createOptionSelect = document.createElement("option");
     //deberia ir un for para crear las opciones
     let padreOptionSelect = document.getElementById("sortPoke");
@@ -100,8 +111,29 @@ buttonFindMe.addEventListener("click", () => {
     //agregamos hijo al padre con metodo appendChild
     padreOptionSelect.appendChild(createOptionSelect);
 
+    //crear option Spawns de select 
+    createOptionSelect = document.createElement("option");
+    //deberia ir un for para crear las opciones
+    padreOptionSelect = document.getElementById("sortPoke");
+    textoOption = document.createTextNode("Por Spawns");
+    createOptionSelect.appendChild(textoOption);
+    //Atributos de option
+    createOptionSelect.setAttribute("value", "spawn_chance");
+    //agregamos hijo al padre con metodo appendChild
+    padreOptionSelect.appendChild(createOptionSelect);
 
-    //recorrer el nuevo arreglo de  pokemones que esta guardado en la variable printPokeComm
+    //crear option hora Spawns de select 
+    createOptionSelect = document.createElement("option");
+    //deberia ir un for para crear las opciones
+    padreOptionSelect = document.getElementById("sortPoke");
+    textoOption = document.createTextNode("Por Hora Spawns");
+    createOptionSelect.appendChild(textoOption);
+    //Atributos de option
+    createOptionSelect.setAttribute("value", "spawn_time");
+    //agregamos hijo al padre con metodo appendChild
+    padreOptionSelect.appendChild(createOptionSelect);
+
+    //recorrer la data
     allPokeData.forEach(element => {
 
         //Creando el elemento div que contiene la mini tarjeta pokemon
@@ -118,5 +150,27 @@ buttonFindMe.addEventListener("click", () => {
                                         <p>Spawn % ${element.spawn_chance}</p>
                                         <p>Hora ${element.spawn_time}</p>`
     });
+
+    //funcion ordenar y anidarlo a select
+    document.getElementById("sortPoke").addEventListener("change", showOrdenPoke);
+    document.getElementById("pokeBox").innerHTML = "";
+
+
+    function showOrdenPoke() {
+
+        const showSortPokemon = document.getElementById("principal");
+        let sortPokemones = document.getElementById("sortPoke").value;
+
+        let sortPokePrint = window.data.sortPokemon(allPokeData, sortPokemones);
+        showSortPokemon.innerHTML = sortPokePrint.map(element => {
+
+            return `<div>
+     <img src = ${element.img}>
+     <h1>${element.name}</h1>
+     <p>Spawn % ${element.spawn_chance}</p>
+     <p>Hora ${element.spawn_time}</p>
+     </div>`
+        }).join("");
+    };
 
 });

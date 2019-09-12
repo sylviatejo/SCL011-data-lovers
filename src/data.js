@@ -48,29 +48,22 @@ window.data = {
 
 
 
-
-    sortPokemon: (resultFilterCommons, sortPoke) => {
-        if (sortPoke === 'name') {
-            const sortPokemones1 = resultFilterCommons.sort((a, b) => {
-                return (a.name < b.name) ? -1 : 1
-            })
-            return sortPokemones1;
-        }
-
-
-
-        /*
-       const sortPokemones1 = resultFilterCommons.sort(function(a, b) {
-            if (a.name > b.name) {
-                return 1;
+    /*
+        sortPokemon: (allPokeData, sortPokem) => {
+            if (sortPokem === 'name') {
+                const sortPokemones1 = allPokeData.sort((a, b) => {
+                    return (a.name < b.name) ? -1 : 1
+                })
+                return sortPokemones1;
             }
-            if (a.name < b.name) {
-                return -1;
-            }
+        }*/
 
+    sortPokemon: (allPokeData, sortPokem) => {
+
+        sortPokem = allPokeData.sort((a, b) => {
+            return a.localeCompare(b)
         });
-        console.log(sortPokemones1);
-    }*/
-
+        return sortPokem;
     }
+
 };
