@@ -48,22 +48,14 @@ window.data = {
 
 
 
-    /*
-        sortPokemon: (allPokeData, sortPokem) => {
-            if (sortPokem === 'name') {
-                const sortPokemones1 = allPokeData.sort((a, b) => {
-                    return (a.name < b.name) ? -1 : 1
-                })
-                return sortPokemones1;
-            }
-        }*/
 
-    sortPokemon: (allPokeData, sortPokem) => {
+    sortPokemon: (allPokeData, sortPokemon) => {
 
-        sortPokem = allPokeData.sort((a, b) => {
-            return a.localeCompare(b)
+        sortPokemon = allPokeData.sort((a, b) => {
+            return a.name.localeCompare(b.name)
         });
-        return sortPokem;
+        return sortPokemon;
+
     }
 
 };

@@ -1,20 +1,20 @@
-//asignar a una variable total de data pokemon.js
+// data completa
 const allPokeData = window.POKEMON.pokemon;
+// data promediada con una propiedad
 const mediaPoke = window.data.pokeMedia(allPokeData);
-//asignar evento al boton pokemon comunes para filtrar y calcular
-const buttonPokeComm = document.getElementById("pokeComm");
-
-//Asignar a una variable el resultado del filtro pokemones comunes que fue un nuevo arreglo de 41 pokemones
+// data filtrada
 const printPokeComm = window.data.filterPokeCommon(allPokeData, mediaPoke);
 //console.log(printPokeComm);
+// data ordenada
 
-//asignar evento al boton pokemon raros para filtrar y calcular
+//asignar evento al botones
+const buttonPokeComm = document.getElementById("pokeComm");
 const buttonPokeRare = document.getElementById("pokeRare");
 
 //Asignar a una variable el resultado del filtro pokemones inusuales que fue un nuevo arreglo de 41 pokemones
 const printPokeRare = window.data.filterPokeRare(allPokeData, mediaPoke);
 //console.log(printPokeRare);
-
+//comentario de prueba
 const buttonFindMe = document.getElementById("findMe");
 
 
@@ -78,60 +78,6 @@ buttonPokeRare.addEventListener("click", () => {
 buttonFindMe.addEventListener("click", () => {
 
     document.getElementById("pokeBox").innerHTML = "";
-
-
-    //crear select de ordenar 
-    let createSelect = document.createElement("select");
-    //deberia ir un for para crear las opciones
-    let padreSelect = document.getElementById("principal");
-    //Atributos del select
-    createSelect.setAttribute("id", "sortPoke");
-    //agregamos hijo al padre con metodo appendChild
-    padreSelect.appendChild(createSelect);
-    /*
-        //crear option selected de select 
-        let createOptionSelect = document.createElement("option");
-        //deberia ir un for para crear las opciones
-        let padreOptionSelect = document.getElementById("sortPoke");
-        let textoOption = document.createTextNode("Por Nombre");
-        createOptionSelect.appendChild(textoOption);
-        //Atributos de option
-        createOptionSelect.setAttribute("selected disabled", "selected");
-        //agregamos hijo al padre con metodo appendChild
-        padreOptionSelect.appendChild(createOptionSelect);*/
-
-    //crear option name de select 
-    let createOptionSelect = document.createElement("option");
-    //deberia ir un for para crear las opciones
-    let padreOptionSelect = document.getElementById("sortPoke");
-    let textoOption = document.createTextNode("Por Nombre");
-    createOptionSelect.appendChild(textoOption);
-    //Atributos de option
-    createOptionSelect.setAttribute("value", "name");
-    //agregamos hijo al padre con metodo appendChild
-    padreOptionSelect.appendChild(createOptionSelect);
-
-    //crear option Spawns de select 
-    createOptionSelect = document.createElement("option");
-    //deberia ir un for para crear las opciones
-    padreOptionSelect = document.getElementById("sortPoke");
-    textoOption = document.createTextNode("Por Spawns");
-    createOptionSelect.appendChild(textoOption);
-    //Atributos de option
-    createOptionSelect.setAttribute("value", "spawn_chance");
-    //agregamos hijo al padre con metodo appendChild
-    padreOptionSelect.appendChild(createOptionSelect);
-
-    //crear option hora Spawns de select 
-    createOptionSelect = document.createElement("option");
-    //deberia ir un for para crear las opciones
-    padreOptionSelect = document.getElementById("sortPoke");
-    textoOption = document.createTextNode("Por Hora Spawns");
-    createOptionSelect.appendChild(textoOption);
-    //Atributos de option
-    createOptionSelect.setAttribute("value", "spawn_time");
-    //agregamos hijo al padre con metodo appendChild
-    padreOptionSelect.appendChild(createOptionSelect);
 
     //recorrer la data
     allPokeData.forEach(element => {
