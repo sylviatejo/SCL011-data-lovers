@@ -1,21 +1,20 @@
 // data completa
 const allPokeData = window.POKEMON.pokemon;
-// data promediada con una propiedad
+// data promediada con una propiedad (nuevo arreglo numerico)
 const mediaPoke = window.data.pokeMedia(allPokeData);
 // data filtrada
 const printPokeComm = window.data.filterPokeCommon(allPokeData, mediaPoke);
-//console.log(printPokeComm);
+const printPokeRare = window.data.filterPokeRare(allPokeData, mediaPoke);
+
 // data ordenada
 
-//asignar evento al botones
+//asignar variables botones
 const buttonPokeComm = document.getElementById("pokeComm");
 const buttonPokeRare = document.getElementById("pokeRare");
-
-//Asignar a una variable el resultado del filtro pokemones inusuales que fue un nuevo arreglo de 41 pokemones
-const printPokeRare = window.data.filterPokeRare(allPokeData, mediaPoke);
-//console.log(printPokeRare);
-//comentario de prueba
 const buttonFindMe = document.getElementById("findMe");
+
+
+
 
 
 
@@ -110,7 +109,7 @@ buttonFindMe.addEventListener("click", () => {
         let sortPokePrint = window.data.sortPokemon(allPokeData, sortPokemones);
         showSortPokemon.innerHTML = sortPokePrint.map(element => {
 
-            return `<div>
+            return `<div id="principal">
      <img src = ${element.img}>
      <h1>${element.name}</h1>
      <p>Spawn % ${element.spawn_chance}</p>
