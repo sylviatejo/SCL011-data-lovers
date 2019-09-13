@@ -54,6 +54,7 @@ window.data = {
         sortPokemon = allPokeData.sort((a, b) => {
             return a.name.localeCompare(b.name)
         });
+
         return sortPokemon;
 
     }
