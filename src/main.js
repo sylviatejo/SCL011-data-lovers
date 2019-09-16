@@ -29,7 +29,7 @@ function cardsPokemonGo(allPokeData) {
                                         <p>Spawn % ${element.spawn_chance}</p>
                                         <p>Hora ${element.spawn_time}</p>`
     })
-};
+}
 
 //asigno evento al boton e imprimo data filtrada pokemon comunes
 buttonPokeComm.addEventListener("click", () => {
@@ -67,4 +67,4 @@ function showOrdenPoke() {
     let datapokemones = window.data.sortPoke(allPokeData, selectedOrder);
     document.getElementById("principal").innerHTML = "";
     cardsPokemonGo(datapokemones);
-};
+}
