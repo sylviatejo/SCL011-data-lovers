@@ -1,0 +1,86 @@
+/*menu responsive*/
+
+@media (max-width:768px) {
+    
+    /*Hacemos aparecer el ícono menú hamburguesa*/
+
+    header label {
+        display: block;
+    }
+
+    /*Estilo y posición menú hamburguesa*/
+
+    .menuFiltro {
+        position: absolute;
+        background: #EEEEEE;
+        width: 55%;
+        margin-left: -80%;
+        transition: all 0.5s;
+    }
+
+    /*Indicamos que el menú se vea como columna*/
+
+    .menuFiltro ul {
+        flex-direction: column;
+    }
+
+    /*Líneas separadoras del menú hamburguesa*/
+
+    .menuFiltro li {
+        border-top: 1px solid #828282;
+    }
+
+    /*Indicamos que check busque a menú filtro*/
+
+    #btn-menu:checked ~ .menuFiltro {
+        margin: 0;
+    }
+}
+
+/*PÁGINA RESPONSIVE TABLET*/
+
+@media screen and (max-width: 768px) {
+
+    .container {
+
+        grid-template-areas: "header header header"
+                            "content content content"
+                            "pokemonBox pokemonBox pokemonBox"
+                            "footer footer footer"
+    }
+
+  .container .classButt {
+
+    grid-area: content;
+    background-size: 100%;
+    margin: 10px;
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .container .classButt2 {
+
+    grid-area: content;
+    background-size: 100%;
+    margin: 10px;
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .container .pokeWelcome {
+      grid-area: header;
+      width: 100%;
+  }
+
+  .container .pokemonBox {
+      grid-area: pokemonBox;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+
+}
