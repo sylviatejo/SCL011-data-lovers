@@ -30,7 +30,7 @@ window.data = {
         return resultFilterRare; //nuevo arreglo de pokemones menor a la media
     },
 
-    //Funcion Ordenar
+    //Funcion Ordenar todo
     sortPoke: (allPokeData, sortPokemon) => {
         let sortPoke;
         if (sortPokemon === "name") {
