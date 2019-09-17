@@ -1,11 +1,12 @@
 global.window = global;
 global.assert = require('chai').assert;
+require('../src/data/pokemon/pokemon.js');
 require('../src/data');
 require('./data.spec.js');
-let data;
 
-describe(data.filterPokeCommon, () => {
-    const sampleCommon = [{
+describe('filterPokeCommon', ()=>{
+    const sampleCommon = [
+        {
             "name": "Poliwag",
             "avg_spawns": 219,
         },
