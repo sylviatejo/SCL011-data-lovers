@@ -1,6 +1,6 @@
 //funcion filtrar
 window.data = {
-    //calculo de media para filtrar comunes y raros
+    //calculo de media para condicion de filtrar comunes y raros
 
     pokeMedia: (allPokeData) => {
         //convierte un array de objetos en un array numerico
