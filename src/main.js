@@ -18,16 +18,20 @@ function cardsPokemonGo(allPokeData) {
         //Creando el elemento div que contiene la mini tarjeta pokemon
         let createMiniPokeCars = document.createElement("div");
         //Asignando elemento padre al div creado con variable que es el contenedor
-        let asigPadre = document.getElementById("principal"); //deberia ser la caja pokebox
+        let asigPadre = document.getElementById("principal");
         //asignamos atributos de clases dadas en style
         createMiniPokeCars.setAttribute("class", "classDivMiniCard");
+        //asignamos atributos de id 
+        createMiniPokeCars.setAttribute("id", "divMiniCard");
         //agregamos hijo al padre con metodo appendChild
         asigPadre.appendChild(createMiniPokeCars);
         //Imprimo los valores de las propiedades de la data filtrada
         createMiniPokeCars.innerHTML += `<img src = ${element.img}>
                                         <h1>${element.name}</h1>
                                         <p>Spawn % ${element.spawn_chance}</p>
-                                        <p>Hora ${element.spawn_time}</p>`
+                                        <p>Hora ${element.spawn_time}</p>
+                                        <a href="#modal" id="abrirModal class="classDivMiniCard" >Más...</a>`
+
     })
 }
 

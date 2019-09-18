@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
 /*Estilo Contenedor*/
 
 .container {
@@ -15,11 +16,7 @@ body {
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
-
-    grid-template-areas: "header header header"
-                        "content content content"
-                        "pokemonBox pokemonBox pokemonBox"
-                        "footer footer footer"
+    grid-template-areas: "header header header" "content content content" "pokemonBox pokemonBox pokemonBox" "footer footer footer"
 }
 
 .container .header {
@@ -42,6 +39,7 @@ body {
     grid-area: footer;
 }
 
+
 /* Espacio Menú y Color*/
 
 .menuFiltro {
@@ -50,6 +48,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 
 /*Color fondo para eliminar gris*/
 
@@ -74,11 +73,13 @@ header .pokeWelcome {
     background-image: linear-gradient(#eeeeee, #FFFFFF);
 }
 
+
 /*Desaparecemos el checklist*/
 
 #btn-menu {
     display: none;
 }
+
 
 /*Atributos botón menú hamburguesa*/
 
@@ -90,12 +91,14 @@ header label {
     border-right: 1px solid #828282;
 }
 
+
 /*Atributo botón menu hamburguesa HOVER*/
 
 header label :hover {
     cursor: pointer;
     background: #d8d7d7;
 }
+
 
 /*Estilo lista*/
 
@@ -106,17 +109,20 @@ header label :hover {
     display: flex;
 }
 
+
 /* Estilo items lista*/
 
 .menuFiltro li {
-border-right: 1px solid #828282;
+    border-right: 1px solid #828282;
 }
+
 
 /*Efecto hover menu*/
 
 .menuFiltro li:hover {
     background: #D3D3D3;
 }
+
 
 /*Estilo texto items menu*/
 
@@ -126,6 +132,7 @@ border-right: 1px solid #828282;
     color: #4F4F4F;
     text-decoration: none;
 }
+
 
 /* Clase para div de mini carta pokemon */
 
@@ -143,6 +150,7 @@ border-right: 1px solid #828282;
     font-size: 18px;
 }
 
+
 /* Estilo Botón Pokemones Comunes*/
 
 .classButt {
@@ -158,12 +166,12 @@ border-right: 1px solid #828282;
     color: transparent;
     cursor: pointer;
     margin: 30px;
-    
 }
 
 .classButt:hover {
     background-image: url(../src/images/bg-boton-common-hover.png);
 }
+
 
 /* Estilo Botón Pokemones Raros*/
 
@@ -186,6 +194,7 @@ border-right: 1px solid #828282;
     background-image: url(..//src/images/bg-boton-rare-hover.png);
 }
 
+
 /*Estilo Nombre Pokemon Mini Card*/
 
 h1 {
@@ -196,6 +205,7 @@ h1 {
     line-height: 1px;
     color: #213037;
 }
+
 
 /*Estilo Info secundaria Pokemon Mini Card*/
 
@@ -212,11 +222,16 @@ h2 {
     color: #828282;
     font-size: 14px;
     font-weight: 400;
-
 }
 
 .content {
     display: flex;
     justify-content: center;
 }
+
+.classDivMiniCard a {
+    text-decoration: none;
+}
+
+
 /*comentario random*/
