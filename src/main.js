@@ -31,6 +31,17 @@ function cardsPokemonGo(allPokeData) {
                                         <p>Spawn % ${element.spawn_chance}</p>
                                         <p>Hora ${element.spawn_time}</p>
                                         <a href="#modal" id="abrirModal class="classDivMiniCard" >Más...</a>`
+        let createDivModal = document.createElement("div");
+        createDivModal.appendChild(asigPadre);
+        createAmodal.setAttribute("href", "#modal");
+        createAmodal.setAttribute("id", "abrirModal");
+        createAmodal.className = "classDivMiniCard";
+        let contModal = document.getElementById("divMiniCard");
+        contModal.appendChild(createAmodal);
+
+
+
+
 
     })
 }
