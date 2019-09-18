@@ -5,7 +5,8 @@ require('../src/data');
 require('./data.spec.js');
 
 describe('filterPokeCommon', () => {
-    const sampleCommon = [{
+    const sampleCommon = [
+      {
             "name": "Poliwag",
             "avg_spawns": 219,
         },
@@ -31,7 +32,8 @@ describe('filterPokeCommon', () => {
 })
 
 describe('filterPokeRare', () => {
-    const sampleRare = [{
+    const sampleRare = [
+      {
             "name": "Mew",
             "avg_spawns": 0,
         },
@@ -43,7 +45,7 @@ describe('filterPokeRare', () => {
             "name": "Dewgong",
             "avg_spawns": 1.3,
         },
-    ]
+    ];
 
     describe('filterPokeRare', () => {
         it('debería ser una función', () => {
@@ -67,17 +69,42 @@ describe('filterPokeRare', () => {
           "name": "Arcanine"
         }
       ];
-      it('debería ser uan función',() =>{
+      
+      it('debería ser una función',() =>{
         assert.equal(typeof window.data.sortPoke, 'function');
       });
 
-      it('debería retornar el objeto "Arcanine", "Charmander", "Vulpix" al ordenar por ABC', () => {
-        assert.deepEqual(window.data.sortPoke(sampleOrderName,"ABC"), [{"name": "Arcanine"},{"name": "Charmander"},{"name": "Vulpix"}]);
+      it('debería retornar el objeto "Arcanine", "Charmander", "Vulpix" al ordenar por "name"', () => {
+        assert.deepEqual(window.data.sortPoke(sampleOrderName,"name"), [{"name": "Arcanine"},{"name": "Charmander"},{"name": "Vulpix"}]);
 
       });
     })
-            assert.deepEqual(window.data.filterPokeRare(sampleRare, '0'), [{ "name": "Mew", "avg_spawns": 0 }]);
-        })
-    })
 })
+
+describe('sortPoke', () =>{
+  const sampleOrderNumber = [
+    {
+      "name": "Rapidash",
+      "spawn_chance": 0.011,
+    },
+    {
+      "name": "Seel",
+      "spawn_chance": 0.28,
+    },
+    {
+      "name": "Gastly",
+      "spawn_chance": 0.79,
+    }
+  ];
+  
+  it('debería ser una función',() => {
+    assert.equal(typeof window.data.sortPoke, 'function');
+  });
+
+  it('debería rertornar el objeto "Rapidash", "Seel", "Gastly" al ordenar por "spawn_chance"', ()=>{
+    assert.deepEqual(window.data.sortPoke(sampleOrderNumber,"spawn_chance"), [{"name": "Rapidash", "spawn_chance": 0.011,},{"name":"Seel", "spawn_chance": 0.28,},{"name": "Gastly", "spawn_chance": 0.79,}]);
+  });
+})
+
+
 
