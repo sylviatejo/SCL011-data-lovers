@@ -52,3 +52,25 @@ describe('filterPokeCommon', ()=>{
           assert.deepEqual(window.data.filterPokeRare(sampleRare, '0'), [{"name": "Mew", "avg_spawns": 0}]);
       })
     })
+
+    describe('sortPoke', () =>{
+      const sampleOrderName = [
+        {
+          "name": "Charmander"
+        },
+        {
+          "name": "Vulpix"
+        },
+        {
+          "name": "Arcanine"
+        }
+      ];
+      it('debería ser uan función',() =>{
+        assert.equal(typeof window.data.sortPoke, 'function');
+      });
+
+      it('debería retornar el objeto "Arcanine", "Charmander", "Vulpix" al ordenar por ABC', () => {
+        assert.deepEqual(window.data.sortPoke(sampleOrderName,"ABC"), [{"name": "Arcanine"},{"name": "Charmander"},{"name": "Vulpix"}]);
+
+      });
+    })
