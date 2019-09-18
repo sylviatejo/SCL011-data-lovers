@@ -14,7 +14,7 @@ window.data = {
     filterPokeCommon: (allPokeData, mediaPoke) => {
         let filterPoke;
         const resultFilterCommons = allPokeData.filter(elementObject => {
-            filterPoke = elementObject.avg_spawns > mediaPoke;
+            filterPoke = elementObject.avg_spawns >= mediaPoke;
             return filterPoke;
         });
         return resultFilterCommons; //nuevo arreglo de pokemones mayor a la media
@@ -24,7 +24,7 @@ window.data = {
     filterPokeRare: (allPokeData, mediaPoke) => {
         let filterPoke;
         const resultFilterRare = allPokeData.filter(elementObject => {
-            filterPoke = elementObject.avg_spawns < mediaPoke;
+            filterPoke = elementObject.avg_spawns <= mediaPoke;
             return filterPoke;
         });
         return resultFilterRare; //nuevo arreglo de pokemones menor a la media
