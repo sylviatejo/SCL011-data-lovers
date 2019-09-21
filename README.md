@@ -2,8 +2,8 @@
 
 ## **Índice**
 
-* [Preámbulo](#preámbulo)
-* [Descripción](#resumen-del-proyecto)
+* [Introducción](#introduccion)
+* [Definición de usuario y sus necesidades](#definición-de-usuario-y-sus-necesidades)
 * [Consideraciones generales](#consideraciones-generales)
 * [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
 * [Parte obligatoria](#parte-obligatoria)
@@ -15,26 +15,11 @@
 
 ***
 
-## **1. Preámbulo**
+## **1. Introducción**
 
-Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 trillones de bytes de datos, una cifra sin precedentes.
+A todo true gamer le ha pasado que cuando busca algo en específico pasa por MILES de páginas y miles de párrafos que le hacen perder VALIOSO tiempo de juego o de vida. Para esto llega **Poke Me!**, una aplicación complementaria al juego POKEMÓN GO, que te permite encontrar de manera rápida y fácil los datos de aparición de ese escurridizo pokemón que se niega a ocupar el espacio que le corresponde en tu pokedex.
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
-
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario.
-
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
-
-\* Puedes ver el datalle de la data en este [link](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
-y la interfaz construida en este [link](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
-
-## **2. Resumen del proyecto**
+## **2. Definición de usuario y sus necesidades**
 
 En este proyecto **construirás una _página web_ para visualizar un
 _conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario

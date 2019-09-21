@@ -46,7 +46,7 @@
         grid-template-areas: "header header header"
                             "content content content"
                             "pokemonBox pokemonBox pokemonBox"
-                            "footer footer footer"
+                            "footer footer footer";
     }
 
   .container .classButt {
@@ -72,6 +72,35 @@
   .container .pokeWelcome {
       grid-area: header;
       width: 100%;
+  }
+
+  .container .selectionArea {
+      grid-area: header;
+      width: 100%;
+      display: inline-block;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      background-color: white;
+  }
+
+  .container .buttonPokemon {
+      grid-area: header;
+      display: inline-block;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+  }
+
+  .container .pokemonSelect {
+      grid-area: header;
+      display: inline-block;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
   }
 
   .container .pokemonBox {
