@@ -29,9 +29,8 @@ function cardsPokemonGo(allPokeData) {
         createMiniPokeCars.innerHTML += `<img src = ${element.img}>
                                         <h1>${element.name}</h1>
                                         <p>Spawn % ${element.spawn_chance}</p>
-                                        <p>Hora ${element.spawn_time}</p>
-                                        `
-            //creamos etiqueta <a> para abrir modal a cada tarjeta
+                                        <p>Hora ${element.spawn_time}</p>`                                `
+        //creamos etiqueta <a> para abrir modal a cada tarjeta
         let createAmodal = document.createElement("a");
         createMiniPokeCars.appendChild(createAmodal);
         createAmodal.className = "classDivMiniCard";
