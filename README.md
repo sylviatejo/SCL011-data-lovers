@@ -21,6 +21,8 @@ A todo true gamer le ha pasado que cuando busca algo en específico pasa por MIL
 
 ## **2. Definición de usuario y sus necesidades**
 
+COMENTARIOS RANDOM
+
 En este proyecto **construirás una _página web_ para visualizar un
 _conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
 necesita.
