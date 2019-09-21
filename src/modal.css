@@ -1,3 +1,10 @@
+.flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -35,6 +42,7 @@
     color: #f2f2f2;
     font-size: 30px;
     font-weight: bold;
+    justify-content: right;
 }
 
 .close:hover {
@@ -43,9 +51,15 @@
     cursor: pointer;
 }
 
-.modal-body,
+.modal-header,
 footer {
-    padding: 8px 16px;
-    background: #7f8c8d;
+    padding: 8px 1px;
+    background-image: linear-gradient(#36A8EE, #3AD8D3);
     color: #f2f2f2;
+}
+
+@media screen and (max-width:900px) {
+    .contenido-modal {
+        width: 80%;
+    }
 }

@@ -12,9 +12,8 @@ window.data = {
 
     //Funcion Filtrar Pokemones Comunes
     filterPokeCommon: (allPokeData, mediaPoke) => {
-        let filterPoke;
         const resultFilterCommons = allPokeData.filter(elementObject => {
-            filterPoke = elementObject.avg_spawns >= mediaPoke;
+            let filterPoke = elementObject.avg_spawns >= mediaPoke;
             return filterPoke;
         });
         return resultFilterCommons; //nuevo arreglo de pokemones mayor a la media
@@ -22,15 +21,23 @@ window.data = {
 
     //Funcion Filtrar Pokemones Raros
     filterPokeRare: (allPokeData, mediaPoke) => {
-        let filterPoke;
         const resultFilterRare = allPokeData.filter(elementObject => {
-            filterPoke = elementObject.avg_spawns <= mediaPoke;
+            let filterPoke = elementObject.avg_spawns <= mediaPoke;
             return filterPoke;
         });
         return resultFilterRare; //nuevo arreglo de pokemones menor a la media
     },
 
-    //Funcion Ordenar todo
+    //Funcion filtrar por numero
+    filterNumber: (allPokeData) => {
+        const filterPokeNum = allPokeData.filter(elementObject => {
+            let filterNum = elementObject.id;
+            return filterNum;
+        });
+        return filterPokeNum;
+    },
+
+    //Funcion Ordenar
     sortPoke: (allPokeData, sortPokemon) => {
         let sortPoke;
         if (sortPokemon === "name") {

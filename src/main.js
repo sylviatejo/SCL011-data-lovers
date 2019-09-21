@@ -5,12 +5,12 @@ const mediaPoke = window.data.pokeMedia(allPokeData);
 // data filtrada
 const printPokeComm = window.data.filterPokeCommon(allPokeData, mediaPoke);
 const printPokeRare = window.data.filterPokeRare(allPokeData, mediaPoke);
-
+const printPokeNum = window.data.filterNumber(allPokeData);
 //asignar variables botones
 const buttonPokeComm = document.getElementById("pokeComm");
 const buttonPokeRare = document.getElementById("pokeRare");
 const buttonFindMe = document.getElementById("findMe");
-
+const buttonNum = document.getElementById("btnNum");
 
 // Crear funcion para las tarjetas pokecard
 function cardsPokemonGo(allPokeData) {
@@ -18,33 +18,92 @@ function cardsPokemonGo(allPokeData) {
         //Creando el elemento div que contiene la mini tarjeta pokemon
         let createMiniPokeCars = document.createElement("div");
         //Asignando elemento padre al div creado con variable que es el contenedor
-        let asigPadre = document.getElementById("principal");
+        let contPadre = document.getElementById("principal");
         //asignamos atributos de clases dadas en style
         createMiniPokeCars.setAttribute("class", "classDivMiniCard");
         //asignamos atributos de id 
         createMiniPokeCars.setAttribute("id", "divMiniCard");
         //agregamos hijo al padre con metodo appendChild
-        asigPadre.appendChild(createMiniPokeCars);
-        //Imprimo los valores de las propiedades de la data filtrada
+        contPadre.appendChild(createMiniPokeCars);
+        //Imprimo los valores de las propiedades de la data
         createMiniPokeCars.innerHTML += `<img src = ${element.img}>
                                         <h1>${element.name}</h1>
                                         <p>Spawn % ${element.spawn_chance}</p>
                                         <p>Hora ${element.spawn_time}</p>
-                                        <a href="#modal" id="abrirModal class="classDivMiniCard" >Más...</a>`
-        let createDivModal = document.createElement("div");
-        createDivModal.appendChild(asigPadre);
-        createAmodal.setAttribute("href", "#modal");
-        createAmodal.setAttribute("id", "abrirModal");
+                                        `
+            //creamos etiqueta <a> para abrir modal a cada tarjeta
+        let createAmodal = document.createElement("a");
+        createMiniPokeCars.appendChild(createAmodal);
         createAmodal.className = "classDivMiniCard";
-        let contModal = document.getElementById("divMiniCard");
-        contModal.appendChild(createAmodal);
+        createAmodal.setAttribute("id", "abrir");
+        createAmodal.setAttribute("href", "#modal");
+        let textoA = document.createTextNode("Mas...");
+        createAmodal.appendChild(textoA);
+        //varios div para creacion y funcionamiento de modal
+        let createDivModal = document.createElement("div");
+        contPadre.appendChild(createDivModal);
+        createDivModal.className = "modal";
+        createDivModal.setAttribute("id", "miModal");
+        let createDivFlex = document.createElement("div");
+        createDivModal.appendChild(createDivFlex);
+        createDivFlex.className = "flex";
+        createDivFlex.setAttribute("id", "flex");
+        let createDivContenido = document.createElement("div");
+        createDivFlex.appendChild(createDivContenido);
+        createDivContenido.className = "contenido-modal";
+        createDivContenido.setAttribute("id", "contenido");
+        let createDivheader = document.createElement("div");
+        createDivContenido.appendChild(createDivheader);
+        createDivheader.className = "modal-header flex";
+        createDivheader.setAttribute("id", "headerMod");
+        createDivheader.innerHTML += `<h1>${element.name}</h1>
+                                             <span class="close" id="close">&times; </span>`
+        let createDivBody = document.createElement("div");
+        createDivContenido.appendChild(createDivBody);
+        createDivBody.className = "modalBody";
+        createDivBody.setAttribute("id", "bodyMod");
+        createDivBody.innerHTML += `<img src = ${element.img}>
+                                    <p>Numero ${element.id}</p>
+                                    <p>Caramelos ${element.candy_count}</p>
+                                    <p>Tipo: ${element.type}</p>
+                                    <p>Spawn ${element.avg_spawns}</p>
+                                    <p>Hora ${element.spawn_time}</p>
+                                    <p>Debilidades: ${element.weaknesses}</p>`
+        let createDivFooter = document.createElement("div");
+        createDivContenido.appendChild(createDivFooter);
+        createDivFooter.className = "footer";
+        createDivFooter.setAttribute("id", "footerMod");
+        createDivFooter.innerHTML += `<h2>Creado por Marielys y Sylvia</h2>`
 
+        let modal = document.getElementById("miModal");
+        let flex = document.getElementById("flex");
+        let abrir = document.getElementById("abrir");
+        let cerrar = document.getElementById("close");
+        //asignamos eventos click para abrir y cerrar modal
+        abrir.addEventListener("click", function() {
+            modal.style.display = 'block';
+        });
 
-
-
-
-    })
+        cerrar.addEventListener("click", function() {
+            modal.style.display = 'none';
+        });
+        window.addEventListener("click", function(e) {
+                if (e.target == flex) {
+                    modal.style.display = 'none';
+                }
+            })
+            //cierre forech
+    });
+    //cierre de funcion crear tarjetas
 }
+//---------------------Encuentrame-------------------------
+
+// mostar data completa a traves del boton encuentra tu pokemon
+buttonFindMe.addEventListener("click", () => {
+    document.getElementById("pokeBox").innerHTML = "";
+    //llamo a funcion tarjetas y muestra todos los pokemones
+    cardsPokemonGo(allPokeData);
+});
 
 //asigno evento al boton e imprimo data filtrada pokemon comunes
 buttonPokeComm.addEventListener("click", () => {
@@ -60,15 +119,14 @@ buttonPokeRare.addEventListener("click", () => {
     cardsPokemonGo(printPokeRare);
 });
 
-//---------------------Encuentrame-------------------------
-
-// mostar data completa a traves del boton encuentra tu pokemon
-buttonFindMe.addEventListener("click", () => {
+//asigno evento al boton e imprimo data filtrada poke por numeros
+buttonNum.addEventListener("click", () => {
     document.getElementById("pokeBox").innerHTML = "";
-    //llamo a funcion tarjetas y muestra todos los pokemones
-    cardsPokemonGo(allPokeData);
+    //llamo a la funcion tarjetas e imprimo solo la data filtrada
+    cardsPokemonGo(printPokeNum);
 });
 
+//--------------Ordenar--------------------------------
 //asignar valor de select a una variable
 const sortPokemon = document.getElementById("sortPoke");
 //funcion ordenar y anidarlo a select
