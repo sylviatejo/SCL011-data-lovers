@@ -155,8 +155,6 @@ selectTypePoke.addEventListener("change", () => {
 });
 
 
-
-
 buttonName.addEventListener("click", () => {
     document.getElementById("pokeBox").innerHTML = "";
     //creo funcion para llamar nueva data mostrada por name
