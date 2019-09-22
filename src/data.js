@@ -26,7 +26,7 @@ window.data = {
         return resultFilterRare; //nuevo arreglo de pokemones menor a la media
     },
 
-    //Funcion filtrar por numero
+    //Funcion filtrar por numeroooo
     filterNumber: (allPokeData) => {
         const filterPokeNum = allPokeData.filter(elementObject => {
             let filterNum = elementObject.id;
