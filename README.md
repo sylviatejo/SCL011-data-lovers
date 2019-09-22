@@ -29,35 +29,35 @@ Cuando abordamos el proyecto, nos propusimos solucionar necesidades de usuarios 
 
 Basadas en el punto anterior, nos dirigimos a 4 usuarios que cumplieran con los siguientes requisitos:
 
-1.- Ser usuarios frecuentes de POKEMON GO
-2.- Entender las mecánicas del juego POKEMON GO
-3.- Ser gamers experimentados y entendidos en la dinámica del mundo Pokemón
+1.- Ser usuarios frecuentes de POKEMON GO<br />
+2.- Entender las mecánicas del juego POKEMON GO<br />
+3.- Ser gamers experimentados y entendidos en la dinámica del mundo Pokemón<br />
 
 Debido a los tiempos, las entrevistas fueron documentadas de distintas maneras:
 
 Usuaria 1 (Entrevista vía audio whatsapp)
-INSERTAR ENTREVISTA
+INSERTAR ENTREVISTA<br />
 
 Usuaria 2 (Entrevista vía audio whatsapp)
-INSERTAR ENTREVISTA
+INSERTAR ENTREVISTA<br />
 
 Usuario 3 (Entrevista vía texto whatsapp)
-INSERTAR ENTREVISTA
+INSERTAR ENTREVISTA<br />
 
 Usuario 4 (Entrevista vía texto facebook)
-INSERTAR ENTREVISTA
+INSERTAR ENTREVISTA<br />
 
 **CONCLUSIONES:** De las entrevistas pudimos concluir los siguientes puntos:
 
-1.- Nuestros usuarios mayoritariamente son adultos.
-2.- No tienen mucho tiempo libre.
-3.- Les interesa la información acerca de la aparición de los Pokemones.
-4.- Les interesa evolucionar e intercambiar Pokemones.
-5.- Necesitan información exacta.
+1.- Nuestros usuarios mayoritariamente son adultos.<br />
+2.- No tienen mucho tiempo libre.<br />
+3.- Les interesa la información acerca de la aparición de los Pokemones.<br />
+4.- Les interesa evolucionar e intercambiar Pokemones.<br />
+5.- Necesitan información exacta.<br />
 
 ### **2.3 Definición de Usuario**
 
-**_Atraparlos mi prueba es, entrenarlos mi ideal.Yo viajaré de que aquí a allá, buscando hasta el fin._**
+**_"Atraparlos mi prueba es, entrenarlos mi ideal"_**
 
 **¡TE PRESENTAMOS A NUESTRO USER PERSONA!**
 (https://i.ibb.co/ZW2JdQB/user-persona-profile-01.jpg)
@@ -66,7 +66,7 @@ Antes de que comience el abucheo, DEBEMOS DECLARAR QUE NUESTRA APP NO TIENE DIST
 
 El punto específico de que tomamos de este estudio fue el siguiente:
 
-(https://i.ibb.co/fCJMTg5/video-game-players-by-gender-and-age-in-the-united-states.jpg)
+(https://ibb.co/vJ91MFG)
 
 Puedes saber más acerca del estudio en el siguiente enlace:
 
@@ -87,12 +87,13 @@ Cuando salió Pokemón GO, sintió que no podía dejar de jugarlo, pero ya no te
 
 ### **2.5 Criterios de aceptación y DOD**
 
-• Mostrar los 150 Pokémons de la región de Kanto, según número de Pokedex.
-• Filtrar Pokémons por spawn de mayor y menor aparición.
-• Ordenar los Pokémons por nombre (a-z) o spawn (menos a más).
-• Mostrar información específica de aparición de los Pokémons a través de tarjetas.
-• Diseño responsive.
-• Tests pasan.
+• Mostrar los 150 Pokémons de la región de Kanto, según número de Pokedex.<br />
+• Filtrar Pokémons por spawn de mayor y menor aparición.<br />
+• Filtrar Pokémons por tipos.
+• Ordenar los Pokémons por nombre (a-z) o spawn (menos a más).<br />
+• Mostrar información específica de aparición de los Pokémons a través de tarjetas.<br />
+• Diseño responsive.<br />
+• Tests pasan.<br />
 • AGREGAR CÁLCULO.
 
 ## **3. Definición del Producto**
@@ -107,6 +108,12 @@ Cuando salió Pokemón GO, sintió que no podía dejar de jugarlo, pero ya no te
 ### **4.1 Mapa de Flujo**
 ### **4.2 Wireframe**
 ### **4.3 Visual Design**
+
+**Imágenes**
+**Color**
+**Formas**
+**Tipografía**
+
 ### **4.4 Prototipo de Alta Fidelidad**
 ### **4.5 Zeplin**
 
