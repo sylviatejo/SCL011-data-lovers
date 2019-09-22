@@ -21,57 +21,104 @@ A todo true gamer le ha pasado que cuando busca algo en específico pasa por MIL
 
 ## **2. Definición de usuario y sus necesidades**
 
-COMENTARIOS RANDOM
+### **2.1 Kick starter**
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
+Cuando abordamos el proyecto, nos propusimos solucionar necesidades de usuarios frecuentes de la aplicación POKEMON GO. Podríamos decir entonces, que nuestro primer acercamiento a un perfil de usuario apuntaba a un gamer experimentado, y que nuestro nicho yacía en lo que la aplicación no podía entregarles para completar una experiencia de usuario satisfactoria.
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
+### **2.2 Entrevistas**
 
-Una vez que definas tu área de interés, entiende quién es tu usuario y qué
-necesita saber o ver exactamente; luego podrás construir la interfaz que le
-ayude a interactuar y entender mejor esos datos.
+Basadas en el punto anterior, nos dirigimos a 4 usuarios que cumplieran con los siguientes requisitos:
 
-Estos son datos que te proponemos:
+1.- Ser usuarios frecuentes de POKEMON GO
+2.- Entender las mecánicas del juego POKEMON GO
+3.- Ser gamers experimentados y entendidos en la dinámica del mundo Pokemón
 
-* [Banco Mundial](src/data/worldbank/worldbank.json) Indicadores de desarrollo del Banco Mundial de algunos países (Brasil, Chile, 
-  México y Perú). Estos datos incluyen indicadores demográficos, económicos y 
-  comerciales.
-* [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
-  junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](https://pokemongolive.com).
-* [Steam noticias](src/data/steam/steam.json):
-  Lista noticias relacionadas a los videojuegos presentes en la
-  plataforma de [Steam](https://store.steampowered.com/).
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de jugadores en una liga del
-  juego League of Legends (LoL), puedes revisar la documentación de su API en
-  este [link](https://developer.riotgames.com/api-methods/).
-* [Personas heridas por medio de transporte en EEUU](src/data/injuries/injuries.json).
-  Este set nos muestra el número de personas heridas en accidentes de
-  transporte, con data anual desde 1960 y categorizada por tipo de transporte
-  (aire, barco, automóvil, moto, bicileta, ...).
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json): Este set nos proporciona la lista de los personajes de la serie Rick and Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com/)
-* [Pacientes en EEUU](src/data/patient/patient.json): Este set nos proporciona una lista de pacientes de EEUU. Puedes revisar la documentación de su API en este [link](https://r2.smarthealthit.org/Patient)
+Debido a los tiempos, las entrevistas fueron documentadas de distintas maneras:
 
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún calculo agregado**. Como aclaración,
-con cálculo agregado nos referimos a distintos cálculos que puedes hacer con
-la data que tienes para mostrar información aún más relevante a los usuarios.
-Una opción serían cálculos estadísticos como el promedio, el máximo o el mínimo,
-por ejemplo, si tenemos una colección que representa a un grupo de personas,
-y cada persona está representada como un _objeto_ con una _propiedad_ `altura`,
-podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
+Usuaria 1 (Entrevista vía audio whatsapp)
+INSERTAR ENTREVISTA
 
-## **3. Objetivos de aprendizaje**
+Usuaria 2 (Entrevista vía audio whatsapp)
+INSERTAR ENTREVISTA
 
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
-interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
-usuario necesita.
+Usuario 3 (Entrevista vía texto whatsapp)
+INSERTAR ENTREVISTA
+
+Usuario 4 (Entrevista vía texto facebook)
+INSERTAR ENTREVISTA
+
+**CONCLUSIONES:** De las entrevistas pudimos concluir los siguientes puntos:
+
+1.- Nuestros usuarios mayoritariamente son adultos.
+2.- No tienen mucho tiempo libre.
+3.- Les interesa la información acerca de la aparición de los Pokemones.
+4.- Les interesa evolucionar e intercambiar Pokemones.
+5.- Necesitan información exacta.
+
+### **2.3 Definición de Usuario**
+
+**_Atraparlos mi prueba es, entrenarlos mi ideal.Yo viajaré de que aquí a allá, buscando hasta el fin._**
+
+**¡TE PRESENTAMOS A NUESTRO USER PERSONA!**
+(https://i.ibb.co/ZW2JdQB/user-persona-profile-01.jpg)
+
+Antes de que comience el abucheo, DEBEMOS DECLARAR QUE NUESTRA APP NO TIENE DISTINCIÓN DE GÉNERO, PERO HEMOS TOMADO A UN HOMBRE COMO USER PERSONA, BASADAS EN UN ESTUDIO QUE REALIZADO POR **WEPC**, una empresa que otorga soluciones tecnológicas a gamers, de manera didáctica y accesible para todos. 
+
+El punto específico de que tomamos de este estudio fue el siguiente:
+
+(https://i.ibb.co/fCJMTg5/video-game-players-by-gender-and-age-in-the-united-states.jpg)
+
+Puedes saber más acerca del estudio en el siguiente enlace:
+
+(https://www.wepc.com/news/video-game-statistics/#mobile-gaming)
+Última actualización, Junio 2019.
+
+Gerardo creció mirando animé y jugando videojuegos. De adulto, se niega a dejar ir esa parte de él que siente "lo mantiene joven", pero sabe que sólo puede dedicarles la atención que merecen en su poco tiempo disponible. Ya sea debido al trabajo o estudios, necesita liberarse del estrés y sacar a su niño interior de esta manera.
+
+Al ser una persona con poco tiempo, valora mucho cuando la tecnología (arma de preferencia) le simplifica la vida diaria, sobretodo al momento de jugar. Es ahí cuando recurre a foros y páginas especializadas en los diversos temas que necesita saber para ganar algo de tiempo. Descarga apps y compra accesorios complementarios para tener una experiencia más completa del juego.
+
+Con Pokemón, le pasa que siente una nostalgia especial. Recuerda esas tardes cuando llegaba del colegio a ver la serie, y luego jugaba con sus amigos a ser líderes de gimnasio para enfrentarse entre ellos y ganar medallas. Es por eso que cuando POR FIN llegaron a Chile los videojuegos POKEMON RED Y BLUE (videojuegos que se había informado, impulsaron la serie), los pidió a sus padres como regalo. Cuando finalmente pudo jugar, fue amor al primer intento. Se convirtió en un jugador experto, estudiando las mecánicas para poder convertirse en un criador Pokemón, dedicándole MUCHAS HORAS a este punto.
+
+Cuando salió Pokemón GO, sintió que no podía dejar de jugarlo, pero ya no tenía el mismo tiempo que antes. Planifica su tiempo para jugar, y quiere lograr sus metas de forma rápida (Atraparlos, evolucionarlos e inercambiarlos). Apreciaría mucho que la tecnología le ayudara a lograrlo.
+
+### **2.4 Historias de Usuario**
+
+(https://i.ibb.co/xgCR5Fq/historias-de-usuario-01.jpg)
+
+### **2.5 Criterios de aceptación y DOD**
+
+• Mostrar los 150 Pokémons de la región de Kanto, según número de Pokedex.
+• Filtrar Pokémons por spawn de mayor y menor aparición.
+• Ordenar los Pokémons por nombre (a-z) o spawn (menos a más).
+• Mostrar información específica de aparición de los Pokémons a través de tarjetas.
+• Diseño responsive.
+• Tests pasan.
+• AGREGAR CÁLCULO.
+
+## **3. Definición del Producto**
+
+### **3.1 Necesidades del usuario**
+### **3.2 Solución propuesta**
+### **3.1 Planificación**
+*PONER LINK EN TRELLO*
+
+## **4. Diseño**
+
+### **4.1 Mapa de Flujo**
+### **4.2 Wireframe**
+### **4.3 Visual Design**
+### **4.4 Prototipo de Alta Fidelidad**
+### **4.5 Zeplin**
+
+INCLUIR ZEPLIN
+
+## **5. Prototipado**
+
+## **6. Test de Usuario**
+
+### **6.1 Testeos, insight, feedback**
+### **6.2 Evaluación Heurística**
+### **6.2 A considerar en próximas iteraciones**
 
 Dicho en palabras sencillas, aprenderás a:
 
