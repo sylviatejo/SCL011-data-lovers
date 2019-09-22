@@ -1,7 +1,5 @@
-//funcion filtrar
 window.data = {
     //calculo de media para condicion de filtrar comunes y raros
-
     pokeMedia: (allPokeData) => {
         //convierte un array de objetos en un array numerico
         const avgSpawns = allPokeData.map(elementAvg => elementAvg.avg_spawns)
@@ -37,6 +35,15 @@ window.data = {
         return filterPokeNum;
     },
 
+    //Funcion filtrar por Type
+    pokeFilterType: (allPokeData, pokeType) => {
+        const filterPokeType = allPokeData.filter(element => {
+            return element.type.includes(pokeType)
+        });
+        return filterPokeType;
+    },
+
+
     //Funcion Ordenar
     sortPoke: (allPokeData, sortPokemon) => {
         let sortPoke;
@@ -51,5 +58,6 @@ window.data = {
         }
         return sortPoke;
     },
+
 
 };

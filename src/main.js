@@ -6,11 +6,14 @@ const mediaPoke = window.data.pokeMedia(allPokeData);
 const printPokeComm = window.data.filterPokeCommon(allPokeData, mediaPoke);
 const printPokeRare = window.data.filterPokeRare(allPokeData, mediaPoke);
 const printPokeNum = window.data.filterNumber(allPokeData);
+
+
 //asignar variables botones
 const buttonPokeComm = document.getElementById("pokeComm");
 const buttonPokeRare = document.getElementById("pokeRare");
 const buttonFindMe = document.getElementById("findMe");
 const buttonNum = document.getElementById("btnNum");
+const buttonName = document.getElementById("pokeName");
 
 // Crear funcion para las tarjetas pokecard
 function cardsPokemonGo(allPokeData) {
@@ -92,7 +95,7 @@ function cardsPokemonGo(allPokeData) {
                     modal.style.display = 'none';
                 }
             })
-            //cierre forech
+            //cierre foreach
     });
     //cierre de funcion crear tarjetas
 }
@@ -141,3 +144,27 @@ function showOrdenPoke() {
     document.getElementById("principal").innerHTML = "";
     cardsPokemonGo(datapokemones);
 }
+
+//--------------Filtro por Tipo--------------------------------
+const selectTypePoke = document.getElementById("typePoke");
+selectTypePoke.addEventListener("change", () => {
+    let pokeType = document.getElementById("typePoke").value
+    let printPokeType = window.data.pokeFilterType(allPokeData, pokeType);
+    document.getElementById("principal").innerHTML = "";
+    cardsPokemonGo(printPokeType);
+});
+
+
+
+
+buttonName.addEventListener("click", () => {
+    document.getElementById("pokeBox").innerHTML = "";
+    //creo funcion para llamar nueva data mostrada por name
+    allPokeData.forEach(element => {
+        const contName = document.getElementById("principal");
+        contName.innerHTML += `<h3>${element.name}</h3>
+        <h3>${element.num}</h3>`
+    });;
+
+
+});

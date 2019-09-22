@@ -31,28 +31,50 @@
 
             <nav class="menuFiltro">
                 <ul>
-                    <li><a href="#">TIPO</a></li>
-                    <li><a href="#">NOMBRE</a></li>
-                    <li><a href="#" id="btnNum">NÚMERO</a></li>
                     <li><a href="#">HOME</a></li>
+                    <li><a href="#" id="pokeName">NOMBRE</a></li>
+                    <li><a href="#" id="btnNum">NÚMERO</a></li>
+                    <li><a href="#">INFORMACIÓN</a></li>
                 </ul>
             </nav>
             <br>
             <div class="selectionArea">
-            <div class="buttonPokemon">
-                <button class="finder" id="findMe">POKEDEX DE KANTO</button>
-            </div>
-        
+                <div class="buttonPokemon">
+                    <button class="finder" id="findMe">POKEDEX DE KANTO</button>
+                </div>
 
-            <br>
-            <div class="pokemonSelect">
-                <select class="order" id="sortPoke" name="pokemonOrder">
+                <br>
+                <div class="pokemonSelect">
+                    <select class="order" id="typePoke" name="pokemonType">
+                            <option value="">Buscar por Tipo</option>
+                            <option value="Water">Agua</option>
+                            <option value="Bug">Bicho</option>
+                            <option value="Dragon">Dragón</option>
+                            <option value="Electric">Eléctrico</option>
+                            <option value="Ghost">Fantasma</option>
+                            <option value="Fire">Fuego</option>
+                            <option value="Ice">Hielo</option>
+                            <option value="Grass">Hierba</option>
+                            <option value="Fighting">Luchador</option>
+                            <option value="Normal">Normal</option>
+                            <option value="Psychic">Psíquico</option>
+                            <option value="Rock">Roca</option>
+                            <option value="Ground">Tierra</option>
+                            <option value="Poison">Veneno</option>
+                            <option value="Flying">Volador</option>
+                </select>
+                </div>
+
+                <br>
+                <div class="pokemonSelect">
+                    <select class="order" id="sortPoke" name="pokemonOrder">
                 <option value ="none">Mostrar por</option>
                 <option value ="name">Nombre</option>
                 <option value ="spawn_chance">Spawns</option>
                 </select>
+                </div>
+
             </div>
-        </div>
 
         </header>
 
@@ -61,12 +83,12 @@
             <div class="buttonBox" id="pokeBox">
                 <div id="divButton1">
                     <!--Botón Pokemones Comunes-->
-                    <button class="classButt" id="pokeComm">Pokemones Comunes</button>
+                    <button class="classButt" id="pokeComm">Pokemon Comunes</button>
                 </div>
 
                 <div id="divButton2">
                     <!--Botón Pokemones Raros-->
-                    <button class="classButt2" id="pokeRare">Pokemones Inusuales</button>
+                    <button class="classButt2" id="pokeRare">Pokemon Inusuales</button>
                 </div>
             </div>
         </section>
@@ -75,13 +97,13 @@
             <!--root-->
             <div id="principal">
             </div>
+
         </main>
 
-
         <footer class="footer">
+            <iframe class="map" src="https://www.pokemap.net/es/"></iframe>
             <h2>Creado por Marielys y Sylvia. Laboratoria 2019</h2>
         </footer>
-
     </div>
 
     <!--Javascript-->
