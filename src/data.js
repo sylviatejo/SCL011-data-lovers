@@ -3,7 +3,9 @@ window.data = {
     pokeMedia: (allPokeData) => {
         //convierte un array de objetos en un array numerico
         const avgSpawns = allPokeData.map(elementAvg => elementAvg.avg_spawns)
+            //Suma todos los elementos del arreglo numerico de map
         const acumAvgSpawns = avgSpawns.reduce((acum, elemt) => acum + elemt, 0)
+            //Para saber el promedio o media se divide la sumatoria entre el tamaño del array
         let mediaPoke = acumAvgSpawns / avgSpawns.length;
         return mediaPoke;
     },

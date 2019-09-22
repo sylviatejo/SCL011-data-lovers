@@ -13,8 +13,8 @@ const buttonPokeComm = document.getElementById("pokeComm");
 const buttonPokeRare = document.getElementById("pokeRare");
 const buttonFindMe = document.getElementById("findMe");
 const buttonNum = document.getElementById("btnNum");
-const buttonName = document.getElementById("pokeName");
-
+//const buttonName = document.getElementById("pokeName");
+//------------TARJETAS POKEMON--------------------------------------------------------
 // Crear funcion para las tarjetas pokecard
 function cardsPokemonGo(allPokeData) {
     allPokeData.forEach(element => {
@@ -33,8 +33,8 @@ function cardsPokemonGo(allPokeData) {
                                         <h1>${element.name}</h1>
                                         <p>Spawn % ${element.spawn_chance}</p>
                                         <p>Hora ${element.spawn_time}</p>`
-
-        //creamos etiqueta <a> para abrir modal a cada tarjeta
+            //------------Creacion de MODAL-----------------------
+            //creamos etiqueta <a> para abrir modal a cada tarjeta
         let createAmodal = document.createElement("a");
         createMiniPokeCars.appendChild(createAmodal);
         createAmodal.className = "classDivMiniCard";
@@ -78,44 +78,43 @@ function cardsPokemonGo(allPokeData) {
         createDivFooter.setAttribute("id", "footerMod");
         createDivFooter.innerHTML += `<h2>Creado por Marielys y Sylvia</h2>`
 
-        let modal = document.getElementById("miModal");
-        let flex = document.getElementById("flex");
-        let abrir = document.getElementById("abrir");
-        let cerrar = document.getElementById("close");
-        //asignamos eventos click para abrir y cerrar modal
-        abrir.addEventListener("click", function() {
-            modal.style.display = 'block';
-        });
+        //cierre foreach
+    });
+    let modal = document.getElementById("miModal");
+    let flex = document.getElementById("flex");
+    let abrir = document.getElementById("abrir");
+    let cerrar = document.getElementById("close");
+    //asignamos eventos click para abrir y cerrar modal
+    abrir.addEventListener("click", function() {
+        modal.style.display = 'block';
+    });
 
-        cerrar.addEventListener("click", function() {
+    cerrar.addEventListener("click", function() {
+        modal.style.display = 'none';
+    });
+    window.addEventListener("click", function(e) {
+        if (e.target == flex) {
             modal.style.display = 'none';
-        });
-        window.addEventListener("click", function(e) {
-                if (e.target == flex) {
-                    modal.style.display = 'none';
-                }
-            })
-            //cierre foreach
+        }
     });
     //cierre de funcion crear tarjetas
 }
-//---------------------Encuentrame-------------------------
 
-// mostar data completa a traves del boton encuentra tu pokemon
+// mostar data completa a traves del boton POKEDEX DE KANTO
 buttonFindMe.addEventListener("click", () => {
     document.getElementById("pokeBox").innerHTML = "";
     //llamo a funcion tarjetas y muestra todos los pokemones
     cardsPokemonGo(allPokeData);
 });
 
-//asigno evento al boton e imprimo data filtrada pokemon comunes
+//asigno evento al boton e imprimo data filtrada POKEMON COMUNES
 buttonPokeComm.addEventListener("click", () => {
     document.getElementById("divButton2").innerHTML = "";
     //llamo a la funcion tarjetas e imprimo solo la data filtrada
     cardsPokemonGo(printPokeComm);
 });
 
-//asigno evento al boton e imprimo data filtrada pokemon raros
+//asigno evento al boton e imprimo data filtrada POKEMON RAROS
 buttonPokeRare.addEventListener("click", () => {
     document.getElementById("divButton1").innerHTML = "";
     //llamo a la funcion tarjetas e imprimo solo la data filtrada
@@ -154,7 +153,7 @@ selectTypePoke.addEventListener("change", () => {
     cardsPokemonGo(printPokeType);
 });
 
-
+/*//mostrar nombres de pokemon
 buttonName.addEventListener("click", () => {
     document.getElementById("pokeBox").innerHTML = "";
     //creo funcion para llamar nueva data mostrada por name
@@ -165,4 +164,4 @@ buttonName.addEventListener("click", () => {
     });;
 
 
-});
+});*/

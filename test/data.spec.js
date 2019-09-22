@@ -5,8 +5,7 @@ require('../src/data');
 require('./data.spec.js');
 
 describe('filterPokeCommon', () => {
-    const sampleCommon = [
-      {
+    const sampleCommon = [{
             "name": "Poliwag",
             "avg_spawns": 219,
         },
@@ -32,8 +31,7 @@ describe('filterPokeCommon', () => {
 })
 
 describe('filterPokeRare', () => {
-    const sampleRare = [
-      {
+    const sampleRare = [{
             "name": "Mew",
             "avg_spawns": 0,
         },
@@ -53,58 +51,84 @@ describe('filterPokeRare', () => {
         });
 
         it('debería retornar objeto "Mew" para filtro "avg_spawns": 0', () => {
-          assert.deepEqual(window.data.filterPokeRare(sampleRare, '0'), [{"name": "Mew", "avg_spawns": 0}]);
-      })
+            assert.deepEqual(window.data.filterPokeRare(sampleRare, '0'), [{ "name": "Mew", "avg_spawns": 0 }]);
+        })
     })
 
-    describe('sortPoke', () =>{
-      const sampleOrderName = [
-        {
-          "name": "Charmander"
+    describe('sortPoke', () => {
+        const sampleOrderName = [{
+                "name": "Charmander"
+            },
+            {
+                "name": "Vulpix"
+            },
+            {
+                "name": "Arcanine"
+            }
+        ];
+
+        it('debería ser una función', () => {
+            assert.equal(typeof window.data.sortPoke, 'function');
+        });
+
+        it('debería retornar el objeto "Arcanine", "Charmander", "Vulpix" al ordenar por "name"', () => {
+            assert.deepEqual(window.data.sortPoke(sampleOrderName, "name"), [{ "name": "Arcanine" }, { "name": "Charmander" }, { "name": "Vulpix" }]);
+
+        });
+    })
+})
+
+describe('sortPoke', () => {
+    const sampleOrderNumber = [{
+            "name": "Rapidash",
+            "spawn_chance": 0.011,
         },
         {
-          "name": "Vulpix"
+            "name": "Seel",
+            "spawn_chance": 0.28,
         },
         {
-          "name": "Arcanine"
+            "name": "Gastly",
+            "spawn_chance": 0.79,
         }
-      ];
-      
-      it('debería ser una función',() =>{
+    ];
+
+    it('debería ser una función', () => {
         assert.equal(typeof window.data.sortPoke, 'function');
-      });
+    });
 
-      it('debería retornar el objeto "Arcanine", "Charmander", "Vulpix" al ordenar por "name"', () => {
-        assert.deepEqual(window.data.sortPoke(sampleOrderName,"name"), [{"name": "Arcanine"},{"name": "Charmander"},{"name": "Vulpix"}]);
-
-      });
-    })
+    it('debería rertornar el objeto "Rapidash", "Seel", "Gastly" al ordenar por "spawn_chance"', () => {
+        assert.deepEqual(window.data.sortPoke(sampleOrderNumber, "spawn_chance"), [{ "name": "Rapidash", "spawn_chance": 0.011, }, { "name": "Seel", "spawn_chance": 0.28, }, { "name": "Gastly", "spawn_chance": 0.79, }]);
+    });
 })
 
-describe('sortPoke', () =>{
-  const sampleOrderNumber = [
-    {
-      "name": "Rapidash",
-      "spawn_chance": 0.011,
-    },
-    {
-      "name": "Seel",
-      "spawn_chance": 0.28,
-    },
-    {
-      "name": "Gastly",
-      "spawn_chance": 0.79,
-    }
-  ];
-  
-  it('debería ser una función',() => {
-    assert.equal(typeof window.data.sortPoke, 'function');
-  });
+//test de calculo promedio o media
 
-  it('debería rertornar el objeto "Rapidash", "Seel", "Gastly" al ordenar por "spawn_chance"', ()=>{
-    assert.deepEqual(window.data.sortPoke(sampleOrderNumber,"spawn_chance"), [{"name": "Rapidash", "spawn_chance": 0.011,},{"name":"Seel", "spawn_chance": 0.28,},{"name": "Gastly", "spawn_chance": 0.79,}]);
-  });
-})
+describe('pokeMedia', () => {
+    const samplePokeProm = [{
+
+            "avg_spawns": 219,
+        },
+        {
+
+            "avg_spawns": 275,
+        },
+        {
+
+            "avg_spawns": 102,
+        },
+    ];
+
+    describe('pokeMedia', () => {
+        it('debería ser una función', () => {
+            assert.equal(typeof window.data.pokeMedia, 'function');
+        });
+
+        it('debería retornar 198.66666666666666', () => {
+            assert.deepEqual(window.data.pokeMedia(samplePokeProm), 198.66666666666666);
+        });
+    });
+});
 
 
-
+//test filtrado por tipo
