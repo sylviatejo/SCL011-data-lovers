@@ -62,7 +62,7 @@ INSERTAR ENTREVISTA<br />
 **¡TE PRESENTAMOS A NUESTRO USER PERSONA!**
 ![User Persona](https://i.ibb.co/ZW2JdQB/user-persona-profile-01.jpg)
 
-Antes de que comience el abucheo, DEBEMOS DECLARAR QUE NUESTRA APP NO TIENE DISTINCIÓN DE GÉNERO, PERO HEMOS TOMADO A UN HOMBRE COMO USER PERSONA, BASADAS EN UN ESTUDIO QUE REALIZADO POR **WEPC**, una empresa que otorga soluciones tecnológicas a gamers, de manera didáctica y accesible para todos. 
+Antes de que comience el abucheo, DEBEMOS DECLARAR QUE NUESTRO PRODUCTO NO TIENE DISTINCIÓN DE GÉNERO, PERO HEMOS TOMADO A UN HOMBRE COMO USER PERSONA, BASADAS EN UN ESTUDIO QUE REALIZADO POR **WEPC**, una empresa que otorga soluciones tecnológicas a gamers, de manera didáctica y accesible para todos. 
 
 El punto específico de que tomamos de este estudio fue el siguiente:
 
@@ -89,14 +89,17 @@ Cuando salió Pokemón GO, sintió que no podía dejar de jugarlo, pero ya no te
 
 • Mostrar los 150 Pokémons de la región de Kanto, según número de Pokedex.<br />
 • Filtrar Pokémons por spawn de mayor y menor aparición.<br />
-• Filtrar Pokémons por tipos.
+• Filtrar Pokémons por tipos.<br />
 • Ordenar los Pokémons por nombre (a-z) o spawn (menos a más).<br />
 • Mostrar información específica de aparición de los Pokémons a través de tarjetas.<br />
+• Promedios aplicados en Pokémons comunes y raros (se hizo un promedio para esta separación)
 • Diseño responsive.<br />
 • Tests pasan.<br />
-• AGREGAR CÁLCULO.
+
 
 ## **3. Definición del Producto**
+
+Teniendo en cuenta lo anteriormente expuesto, concluímos que el producto que necesitan nuestros usuarios 
 
 ### **3.1 Necesidades del usuario**
 ### **3.2 Solución propuesta**
@@ -145,9 +148,14 @@ Todos los elementos siguen una forma orgánica, evitando, dentro de lo posible, 
 
 La familia que elegimos fue "Roboto", por ser similar a "Lato", tipografía usada en POKÉMON GO. Recordemos que no queremos ser iguales.
 
-
+![Tipografías](https://i.ibb.co/wCcK8VW/fonts-01.jpg)
 
 ### **4.4 Prototipo de Alta Fidelidad**
+
+A partir de las desiciones de diseño previamente mencionadas, comenzamos a diseñar nuestro prototipo de alta fidelidad. A continuación puedes ver las imágenes, pero si deseas probar el prototipo interactivo, puedes verlo acá: 
+
+<iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FdZdKbCjrDu6D8I22OntLF4%2FPoke-Me%3Fnode-id%3D21%253A1" allowfullscreen></iframe>
+
 ### **4.5 Zeplin**
 
 INCLUIR ZEPLIN
