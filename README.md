@@ -66,7 +66,9 @@ Antes de que comience el abucheo, DEBEMOS DECLARAR QUE NUESTRA APP NO TIENE DIST
 
 El punto específico de que tomamos de este estudio fue el siguiente:
 
-(https://ibb.co/vJ91MFG)
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/fCJMTg5/video-game-players-by-gender-and-age-in-the-united-states.jpg" alt="video-game-players-by-gender-and-age-in-the-united-states" border="0" /></a>
+
+![Video Games by gender](https://i.ibb.co/fCJMTg5/video-game-players-by-gender-and-age-in-the-united-states.jpg)
 
 Puedes saber más acerca del estudio en el siguiente enlace:
 
