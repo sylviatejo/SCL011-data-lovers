@@ -17,7 +17,7 @@
 
 ## **1. Introducción**
 
-A todo true gamer le ha pasado que cuando busca algo en específico pasa por MILES de páginas y miles de párrafos que le hacen perder VALIOSO tiempo de juego o de vida. Para esto llega **Poke Me!**, una aplicación complementaria al juego POKEMÓN GO, que te permite encontrar de manera rápida y fácil los datos de aparición de ese escurridizo pokemón que se niega a ocupar el espacio que le corresponde en tu pokedex.
+A todo true gamer le ha pasado que cuando busca algo en específico pasa por MILES de páginas y miles de párrafos que le hacen perder VALIOSO tiempo de juego o de vida. Para esto llega **POKE ME!**, una aplicación complementaria al juego POKEMÓN GO, que te permite encontrar de manera rápida y fácil los datos de aparición de ese escurridizo pokemón que se niega a ocupar el espacio que le corresponde en tu pokedex.
 
 ## **2. Definición de usuario y sus necesidades**
 
@@ -35,16 +35,16 @@ Basadas en el punto anterior, nos dirigimos a 4 usuarios que cumplieran con los 
 
 Debido a los tiempos, las entrevistas fueron documentadas de distintas maneras:
 
-Usuaria 1 (Entrevista vía audio whatsapp)
+**Usuaria 1** (Entrevista vía audio whatsapp)
 INSERTAR ENTREVISTA<br />
 
-Usuaria 2 (Entrevista vía audio whatsapp)
+**Usuaria 2** (Entrevista vía audio whatsapp)
 INSERTAR ENTREVISTA<br />
 
-Usuario 3 (Entrevista vía texto whatsapp)
+**Usuario 3** (Entrevista vía texto whatsapp)
 INSERTAR ENTREVISTA<br />
 
-Usuario 4 (Entrevista vía texto facebook)
+**Usuario 4** (Entrevista vía texto facebook)
 INSERTAR ENTREVISTA<br />
 
 **CONCLUSIONES:** De las entrevistas pudimos concluir los siguientes puntos:
@@ -60,20 +60,18 @@ INSERTAR ENTREVISTA<br />
 **_"Atraparlos mi prueba es, entrenarlos mi ideal"_**
 
 **¡TE PRESENTAMOS A NUESTRO USER PERSONA!**
-(https://i.ibb.co/ZW2JdQB/user-persona-profile-01.jpg)
+![User Persona](https://i.ibb.co/ZW2JdQB/user-persona-profile-01.jpg)
 
 Antes de que comience el abucheo, DEBEMOS DECLARAR QUE NUESTRA APP NO TIENE DISTINCIÓN DE GÉNERO, PERO HEMOS TOMADO A UN HOMBRE COMO USER PERSONA, BASADAS EN UN ESTUDIO QUE REALIZADO POR **WEPC**, una empresa que otorga soluciones tecnológicas a gamers, de manera didáctica y accesible para todos. 
 
 El punto específico de que tomamos de este estudio fue el siguiente:
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/fCJMTg5/video-game-players-by-gender-and-age-in-the-united-states.jpg" alt="video-game-players-by-gender-and-age-in-the-united-states" border="0" /></a>
-
 ![Video Games by gender](https://i.ibb.co/fCJMTg5/video-game-players-by-gender-and-age-in-the-united-states.jpg)
 
 Puedes saber más acerca del estudio en el siguiente enlace:
 
-(https://www.wepc.com/news/video-game-statistics/#mobile-gaming)
-Última actualización, Junio 2019.
+(https://www.wepc.com/news/video-game-statistics/#mobile-gaming)<br />
+*Última actualización, Junio 2019.*
 
 Gerardo creció mirando animé y jugando videojuegos. De adulto, se niega a dejar ir esa parte de él que siente "lo mantiene joven", pero sabe que sólo puede dedicarles la atención que merecen en su poco tiempo disponible. Ya sea debido al trabajo o estudios, necesita liberarse del estrés y sacar a su niño interior de esta manera.
 
@@ -81,11 +79,11 @@ Al ser una persona con poco tiempo, valora mucho cuando la tecnología (arma de 
 
 Con Pokemón, le pasa que siente una nostalgia especial. Recuerda esas tardes cuando llegaba del colegio a ver la serie, y luego jugaba con sus amigos a ser líderes de gimnasio para enfrentarse entre ellos y ganar medallas. Es por eso que cuando POR FIN llegaron a Chile los videojuegos POKEMON RED Y BLUE (videojuegos que se había informado, impulsaron la serie), los pidió a sus padres como regalo. Cuando finalmente pudo jugar, fue amor al primer intento. Se convirtió en un jugador experto, estudiando las mecánicas para poder convertirse en un criador Pokemón, dedicándole MUCHAS HORAS a este punto.
 
-Cuando salió Pokemón GO, sintió que no podía dejar de jugarlo, pero ya no tenía el mismo tiempo que antes. Planifica su tiempo para jugar, y quiere lograr sus metas de forma rápida (Atraparlos, evolucionarlos e inercambiarlos). Apreciaría mucho que la tecnología le ayudara a lograrlo.
+Cuando salió Pokemón GO, sintió que no podía dejar de jugarlo, pero ya no tenía el mismo tiempo que antes. Planifica su tiempo para jugar, y quiere lograr sus metas de forma rápida (atraparlos, evolucionarlos e intercambiarlos). Apreciaría mucho que la tecnología le ayudara a lograrlo.
 
 ### **2.4 Historias de Usuario**
 
-(https://i.ibb.co/xgCR5Fq/historias-de-usuario-01.jpg)
+![Historias de Usuario](https://i.ibb.co/xgCR5Fq/historias-de-usuario-01.jpg)
 
 ### **2.5 Criterios de aceptación y DOD**
 
@@ -107,14 +105,47 @@ Cuando salió Pokemón GO, sintió que no podía dejar de jugarlo, pero ya no te
 
 ## **4. Diseño**
 
+Para comenzar el proceso de diseño, decidimos empezar diseñando la interfaz para dispositivos moviles, ya que nuestro usuario juega POKEMON GO a través de plataformas móviles, por lo que sería cómodo para ellos que la información que les proveeremos con **POKE ME!** sea a través de la misma manera.
+
 ### **4.1 Mapa de Flujo**
+
+Comenzamos con una idea muy simple y directa. Sin distracciones y lista para usar.
+
+![Diagrama de Flujo](https://i.ibb.co/HTBXjL1/diagrama-flujo-dl.jpg)
+
 ### **4.2 Wireframe**
+
+Acá fuimos detallando más la información que llevaría cada sección. El wireframe sirvió para testear a 2 usuarios, que no encontraron problema alguno en la navegación.
+
+![Wireframe 1](https://i.ibb.co/F4XpyXV/prototipo-media-ds1.jpg)
+![Wireframe 2](https://i.ibb.co/PG47nP8/prototipo-media-ds2.jpg)
+![Wireframe 3](https://i.ibb.co/tQBC3dP/prototipo-media-ds3.jpg)
+
 ### **4.3 Visual Design**
 
+Al querer enfocarnos en no distraer al usuario, decidimos utilizar fondos neutros, una única fuente con muchas variantes, idealmente san serif y que fuera similar a la utilizada en la interfaz de POKEMON GO. Detallamos más a continuación: 
+
 **Imágenes**
+
+Queríamos darle un toque único a la aplicación, rescatando esa nostalgia de muchos al ver la serie ahí por el año 1999. Debido a este último punto, trajimos de vuelta esas ilustraciones, con calidad superior a la de ese entonces, y dándole un papel protagónico en nuestra app.
+
 **Color**
-**Formas**
+
+El color que escogimos como principal, fue el turquesa, por poseer dos cualidades: ser animado y ser relajante. Nuestra idea es invitar al usuario a pasar un rato divertido, no es estresarlo con más estímulos.
+
+![Paleta de Colores](https://i.ibb.co/ZVB2Hfw/paleta-colores-dl-01.jpg)
+
+**Formas UI**
+
+Todos los elementos siguen una forma orgánica, evitando, dentro de lo posible, las formas afiladas. De esta manera creamos lo que visualmente serían zonas cómodas.
+
+![Formas UI](https://i.ibb.co/dMj4y7P/formas-dl.jpg)
+
 **Tipografía**
+
+La familia que elegimos fue "Roboto", por ser similar a "Lato", tipografía usada en POKÉMON GO. Recordemos que no queremos ser iguales.
+
+
 
 ### **4.4 Prototipo de Alta Fidelidad**
 ### **4.5 Zeplin**
