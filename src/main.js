@@ -8,7 +8,7 @@ const printPokeRare = window.data.filterPokeRare(allPokeData, mediaPoke);
 const printPokeNum = window.data.filterNumber(allPokeData);
 
 
-//asignar variables botones
+//asignar variables botonesss
 const buttonPokeComm = document.getElementById("pokeComm");
 const buttonPokeRare = document.getElementById("pokeRare");
 const buttonFindMe = document.getElementById("findMe");
