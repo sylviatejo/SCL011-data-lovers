@@ -132,3 +132,28 @@ describe('pokeMedia', () => {
 
 
 //test filtrado por tipo
+describe('pokeFilterType', () => {
+    const samplePokeFilter = [{
+            "name": "Nidoran ♂",
+            "type": ["Poison"]
+        },
+        {
+            "name": "Psyduck",
+            "type": ["Water"]
+        },
+
+
+    ]
+    describe('pokeFilterType', () => {
+
+        it('debería ser una función', () => {
+            assert.equal(typeof window.data.pokeFilterType, 'function');
+        });
+
+
+        it('debería retornar objeto "Psyduck" para filtro Water" ', () => {
+            assert.deepEqual(window.data.pokeFilterType(samplePokeFilter, 'Water'), [{ "name": "Psyduck", "type": ["Water"] }]);
+        });
+
+    })
+})
