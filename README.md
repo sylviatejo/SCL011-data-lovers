@@ -4,10 +4,10 @@
 
 * [Introducción](#introduccion)
 * [Definición de usuario y sus necesidades](#definición-de-usuario-y-sus-necesidades)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Parte opcional](#parte-opcional-hacker-edition)
+* [Definición del Producto](#consideraciones-generales)
+* [Diseño](#objetivos-de-aprendizaje)
+* [Prototipado](#parte-obligatoria)
+* [Test de Usuario](#parte-opcional-hacker-edition)
 * [Consideraciones técnicas](#consideraciones-técnicas)
 * [Primeros pasos](#primeros-pasos)
 * [Contenido de referencia](#contenido-de-referencia)
@@ -36,10 +36,10 @@ Basadas en el punto anterior, nos dirigimos a 4 usuarios que cumplieran con los 
 Debido a los tiempos, las entrevistas fueron documentadas de distintas maneras:
 
 **Karis Letelier** (Entrevista vía audio whatsapp)<br />
-![Entrevista Karis Letelier](https://soundcloud.com/user-817300132/entrevista-karis-letelier)<br />
+(https://soundcloud.com/user-817300132/entrevista-karis-letelier)<br />
 
 **Carolina Soza** (Entrevista vía audio whatsapp)<br />
-![Entrevista Carolina Soza](https://soundcloud.com/user-817300132/entrevista-carolina-soza)<br />
+(https://soundcloud.com/user-817300132/entrevista-carolina-soza)<br />
 
 *Continuación entrevista vía texto:*<br />
 
@@ -209,7 +209,7 @@ Después de mucho trabajo y esfuerzo, nuestro prototipo final, se ve así:
 
 ## **6. Test de Usuario**
 
-![Testeo Prototipo Final](https://www.loom.com/share/a63deb9aee70411f9b1d6b572fdda227)
+(https://www.loom.com/share/a63deb9aee70411f9b1d6b572fdda227)
 
 ### **6.1 Testeos, insight, feedback**
 
