@@ -74,47 +74,49 @@ function cardsPokemonGo(allPokeData) {
         createDivFooter.setAttribute("id", "footerMod");
         createDivFooter.innerHTML += `<h2>Creado por Marielys y Sylvia</h2>`
 
-        //cierre foreach
-    });
-    let modal = document.getElementById("miModal");
-    let flex = document.getElementById("flex");
-    let abrir = document.getElementById("abrir");
-    let cerrar = document.getElementById("close");
-    //asignamos eventos click para abrir y cerrar modal
-    abrir.addEventListener("click", function() {
-        modal.style.display = 'block';
-    });
+        let modal = document.getElementById("miModal");
+        let flex = document.getElementById("flex");
+        let abrir = document.getElementById("abrir");
+        let cerrar = document.getElementById("close");
+        //asignamos eventos click para abrir y cerrar modal
+        abrir.addEventListener("click", function() {
+            modal.style.display = 'block';
+        });
 
-    cerrar.addEventListener("click", function() {
-        modal.style.display = 'none';
-    });
-    window.addEventListener("click", function(e) {
-        if (e.target == flex) {
+        cerrar.addEventListener("click", function() {
             modal.style.display = 'none';
-        }
+        });
+        window.addEventListener("click", function(e) {
+            if (e.target == flex) {
+                modal.style.display = 'none';
+            }
+        });
+        //cierre foreach
     });
     //cierre de funcion crear tarjetas
 }
-//-----------Informacion---------------------------------------
+//--------------------INFORMACION----------------------------------
 butnInfo.addEventListener("click", () => {
         document.getElementById("pokeBox").innerHTML = "";
         containerFather.innerHTML += `<h1>Información</h1>
         <p>PokeMe</p>`
     })
-    // mostar data completa a traves del boton POKEDEX DE KANTO
+    //----------------POKEDEX DE KANTO---------------------------
+    // mostar data completa a traves del boton POKEDEX
 buttonFindMe.addEventListener("click", () => {
     document.getElementById("pokeBox").innerHTML = "";
     //llamo a funcion tarjetas y muestra todos los pokemones
     cardsPokemonGo(allPokeData);
 });
-
+//----------------POKEMON COMUNES------------------------------
 //asigno evento al boton e imprimo data filtrada POKEMON COMUNES
 buttonPokeComm.addEventListener("click", () => {
     document.getElementById("divButton2").innerHTML = "";
+    //document.getElementById("pokeBox").innerHTML = "";
     //llamo a la funcion tarjetas e imprimo solo la data filtrada
     cardsPokemonGo(printPokeComm);
 });
-
+//----------------POKEMON RAROS-------------------------------------
 //asigno evento al boton e imprimo data filtrada POKEMON RAROS
 buttonPokeRare.addEventListener("click", () => {
     document.getElementById("divButton1").innerHTML = "";
@@ -129,7 +131,16 @@ buttonNum.addEventListener("click", () => {
     cardsPokemonGo(printPokeNum);
 });
 
-//--------------Ordenar--------------------------------
+//-----------------SELECT TIPO--------------------------------
+const selectTypePoke = document.getElementById("typePoke");
+selectTypePoke.addEventListener("change", () => {
+    let pokeType = document.getElementById("typePoke").value;
+    let printPokeType = window.data.pokeFilterType(allPokeData, pokeType);
+    document.getElementById("principal").innerHTML = "";
+    cardsPokemonGo(printPokeType);
+});
+
+//------------------ORDENAR--------------------------------
 //asignar valor de select a una variable
 const sortPokemon = document.getElementById("sortPoke");
 //funcion ordenar y anidarlo a select
@@ -139,30 +150,10 @@ document.getElementById("principal").innerHTML = "";
 function showOrdenPoke() {
     // asignamos valor de la opcion que se escoje en seletc
     let selectedOrder = sortPokemon.options[sortPokemon.selectedIndex].value;
+    let pokeType = document.getElementById("typePoke").value;
+    let datapokeFilter = window.data.pokeFilterType(allPokeData, pokeType);
     // asigno funcion order de data a una variable para mostrar
-    let datapokemones = window.data.sortPoke(allPokeData, selectedOrder);
+    let datapokemones = window.data.sortPoke(datapokeFilter, selectedOrder);
     document.getElementById("principal").innerHTML = "";
     cardsPokemonGo(datapokemones);
 }
-
-//--------------Filtro por Tipo--------------------------------
-const selectTypePoke = document.getElementById("typePoke");
-selectTypePoke.addEventListener("change", () => {
-    let pokeType = document.getElementById("typePoke").value
-    let printPokeType = window.data.pokeFilterType(allPokeData, pokeType);
-    document.getElementById("principal").innerHTML = "";
-    cardsPokemonGo(printPokeType);
-});
-
-/*//mostrar nombres de pokemon
-buttonName.addEventListener("click", () => {
-    document.getElementById("pokeBox").innerHTML = "";
-    //creo funcion para llamar nueva data mostrada por name
-    allPokeData.forEach(element => {
-        const contName = document.getElementById("principal");
-        contName.innerHTML += `<h3>${element.name}</h3>
-        <h3>${element.num}</h3>`
-    });;
-
-
-});*/
