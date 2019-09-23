@@ -7,12 +7,13 @@ const printPokeComm = window.data.filterPokeCommon(allPokeData, mediaPoke);
 const printPokeRare = window.data.filterPokeRare(allPokeData, mediaPoke);
 const printPokeNum = window.data.filterNumber(allPokeData);
 
-
 //asignar variables botonesss
 const buttonPokeComm = document.getElementById("pokeComm");
 const buttonPokeRare = document.getElementById("pokeRare");
 const buttonFindMe = document.getElementById("findMe");
 const buttonNum = document.getElementById("btnNum");
+const butnInfo = document.getElementById("info");
+let containerFather = document.getElementById("principal");
 //const buttonName = document.getElementById("pokeName");
 //------------TARJETAS POKEMON--------------------------------------------------------
 // Crear funcion para las tarjetas pokecard
@@ -94,8 +95,13 @@ function cardsPokemonGo(allPokeData) {
     });
     //cierre de funcion crear tarjetas
 }
-
-// mostar data completa a traves del boton POKEDEX DE KANTO
+//-----------Informacion---------------------------------------
+butnInfo.addEventListener("click", () => {
+        document.getElementById("pokeBox").innerHTML = "";
+        containerFather.innerHTML += `<h1>Información</h1>
+        <p>PokeMe</p>`
+    })
+    // mostar data completa a traves del boton POKEDEX DE KANTO
 buttonFindMe.addEventListener("click", () => {
     document.getElementById("pokeBox").innerHTML = "";
     //llamo a funcion tarjetas y muestra todos los pokemones
