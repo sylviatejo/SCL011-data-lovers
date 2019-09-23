@@ -14,7 +14,7 @@
 
 ## **1. Introducción**
 
-A todo true gamer le ha pasado que cuando busca algo en específico pasa por MILES de páginas y miles de párrafos que le hacen perder VALIOSO tiempo de juego o de vida. Para esto llega ![ POKE ME](https://marielysis.github.io/SCL011-data-lovers/src/index.html), una aplicación complementaria al juego POKEMÓN GO, que te permite encontrar de manera rápida y fácil los datos de aparición de ese escurridizo pokemón que se niega a ocupar el espacio que le corresponde en tu pokedex. 
+A todo true gamer le ha pasado que cuando busca algo en específico pasa por MILES de páginas y miles de párrafos que le hacen perder VALIOSO tiempo de juego o de vida. Para esto llega **POKE ME!**(https://marielysis.github.io/SCL011-data-lovers/src/index.html), una aplicación complementaria al juego POKEMÓN GO, que te permite encontrar de manera rápida y fácil los datos de aparición de ese escurridizo pokemón que se niega a ocupar el espacio que le corresponde en tu pokedex. 
 
 ## **2. Definición de usuario y sus necesidades**
 
