@@ -4,14 +4,11 @@
 
 * [Introducción](#introduccion)
 * [Definición de usuario y sus necesidades](#definición-de-usuario-y-sus-necesidades)
-* [Definición del Producto](#consideraciones-generales)
-* [Diseño](#objetivos-de-aprendizaje)
-* [Prototipado](#parte-obligatoria)
-* [Test de Usuario](#parte-opcional-hacker-edition)
-* [Consideraciones técnicas](#consideraciones-técnicas)
-* [Primeros pasos](#primeros-pasos)
-* [Contenido de referencia](#contenido-de-referencia)
-* [Checklist](#checklist)
+* [Definición del Producto](#definicion-producto)
+* [Diseño](#diseno)
+* [Prototipado](#prototipado)
+* [Test de Usuario](#test-usuario)
+
 
 ***
 
@@ -205,7 +202,7 @@ Después de mucho trabajo y esfuerzo, nuestro prototipo final, se ve así:
 ![Prototipo Final](https://i.ibb.co/5hdXhGV/prototipado.jpg)
 ![Prototipo Final 1](https://i.ibb.co/0MZNF01/prototipado1.png)
 ![Prototipo Final 2](https://i.ibb.co/9YZyJ2q/prototipado2.png)
-![Prototipo Final 3](https://i.ibb.co/n1gHfXR/prototipado3.png)
+![Prototipo Final 3](https://i.ibb.co/zPkP6MH/prototipado3.png)
 
 ## **6. Test de Usuario**
 
@@ -232,7 +229,12 @@ El feedback recibido, nos hizo concluir lo siguiente:
 Debido a las necesidades de nuestros usuarios, para próximas iteraciones podríamos considerar lo siguiente:
 
 1.- Que el diseño se parezca aún más a nuestro prototipo Figma.<br />
-2.- Trabajar con menu en vez de selects.<br />
-3.- Trabajar con banco de datos de pokemones deseados, otorgados por usuario.<br />
-4.- Trabajar con el GPS del celular y así indicarle al usuario cuando un Pokémon que desea, está en el área.<br />
-5.- Permitir intercambio y comparación de Pokémon.<br />
+2.- Mostrar la información de manera tal que sea más amigable con el usuario.<br />
+3.- Mostrar evoluciones en modal.<br />
+4.- Limpiar los selects.<br />
+5.- Mostrar modales en todos los pokémon. <br />
+6.- Ver posibilidad de manipular la data para reemplazar las ilustraciones por otras que se ajusten más a lo que apuntabamos.<br />
+7.- Trabajar con menu en vez de selects.<br />
+8.- Trabajar con banco de datos de pokemones deseados, otorgados por usuario.<br />
+9.- Trabajar con el GPS del celular y así indicarle al usuario cuando un Pokémon que desea, está en el área.<br />
+10.- Permitir intercambio y comparación de Pokémon.<br />
