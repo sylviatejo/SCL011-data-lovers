@@ -59,15 +59,15 @@ function cardsPokemonGo(allPokeData) {
         createDivContenido.appendChild(createDivBody);
         createDivBody.className = "modalBody";
         createDivBody.setAttribute("id", "bodyMod");
-        createDivBody.innerHTML += `<img src = ${element.img}>
-                                    <h3>Pokedex:</h3> <p>${element.id}</p>
-                                    <h3>Caramelos:</h3>  <p>${element.candy}</p>
-                                    <h3>Cantidad de Caramelos:</h3>  <p>${element.candy_count}</p>
-                                    <h3>Tipo:</h3>  <p>${element.type}</p>
-                                    <h3>Cantidad de Huevos:</h2>  <p>${element.egg}</p>
-                                    <h3>Spawn:</h3>  <p>${element.avg_spawns}</p>
-                                    <h3>Hora:</h3>  <p>${element.spawn_time}</p>
-                                    <h3>Debilidades:</h3>  <p>${element.weaknesses}</p>`
+        createDivBody.innerHTML += `<img src = ${element.img}></br>
+                                    <strong>Pokedex:</strong>  <p>${element.id}</p>
+                                    <strong>Caramelos:</strong>  <p>${element.candy}</p>
+                                    <strong>Cantidad de Caramelos:</strong>  <p>${element.candy_count}</p>
+                                    <strong>Tipo:</strong>  <p>${element.type}</p>
+                                    <strong>Cantidad de Huevos:</strong>  <p>${element.egg}</p>
+                                    <strong>Spawn:</strong>  <p>${element.avg_spawns}</p>
+                                    <strong>Hora:</strong>  <p>${element.spawn_time}</p>
+                                    <strong>Debilidades:</strong>  <p>${element.weaknesses}</p>`
         let createDivFooter = document.createElement("div");
         createDivContenido.appendChild(createDivFooter);
         createDivFooter.className = "footer";
