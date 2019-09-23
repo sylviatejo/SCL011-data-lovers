@@ -13,8 +13,8 @@
     .menuFiltro {
         position: absolute;
         background: #EEEEEE;
-        width: 55%;
-        margin-left: -80%;
+        width: 80%;
+        margin-left: -100%;
         transition: all 0.5s;
     }
 
@@ -106,10 +106,8 @@
   .container .pokemonBox {
       grid-area: pokemonBox;
       display: flex;
-      align-content: center;
-      justify-content: center;
+      background-color: #EEEEEE;
       text-align: center;
   }
-
 
 }
