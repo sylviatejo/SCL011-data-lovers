@@ -32,21 +32,14 @@ function cardsPokemonGo(allPokeData) {
         createMiniPokeCars.innerHTML += `<img src = ${element.img}>
                                         <h1>${element.name}</h1>
                                         <p>Spawn % ${element.spawn_chance}</p>
-                                        <p>Hora ${element.spawn_time}</p>`
+                                        <p>Hora ${element.spawn_time}</p>
+                                        <a href="#modal"  id="abrir">Mas...</a> `
             //------------Creacion de MODAL-----------------------
-            //creamos etiqueta <a> para abrir modal a cada tarjeta
-        let createAmodal = document.createElement("a");
-        createMiniPokeCars.appendChild(createAmodal);
-        createAmodal.className = "classDivMiniCard";
-        createAmodal.setAttribute("id", "abrir");
-        createAmodal.setAttribute("href", "#modal");
-        let textoA = document.createTextNode("Mas...");
-        createAmodal.appendChild(textoA);
-        //varios div para creacion y funcionamiento de modal
         let createDivModal = document.createElement("div");
         contPadre.appendChild(createDivModal);
         createDivModal.className = "modal";
         createDivModal.setAttribute("id", "miModal");
+        //div flex que sera mi contenedor del modal 
         let createDivFlex = document.createElement("div");
         createDivModal.appendChild(createDivFlex);
         createDivFlex.className = "flex";
@@ -66,11 +59,13 @@ function cardsPokemonGo(allPokeData) {
         createDivBody.className = "modalBody";
         createDivBody.setAttribute("id", "bodyMod");
         createDivBody.innerHTML += `<img src = ${element.img}>
-                                    <p>Numero ${element.id}</p>
-                                    <p>Caramelos ${element.candy_count}</p>
+                                    <p>Pokedex: ${element.id}</p>
+                                    <p>Caramelos: ${element.candy}</p>
+                                    <p>Cantidad de Caramelos: ${element.candy_count}</p>
                                     <p>Tipo: ${element.type}</p>
-                                    <p>Spawn ${element.avg_spawns}</p>
-                                    <p>Hora ${element.spawn_time}</p>
+                                    <p>Cantidad de Huevos: ${element.egg}</p>
+                                    <p>Spawn: ${element.avg_spawns}</p>
+                                    <p>Hora: ${element.spawn_time}</p>
                                     <p>Debilidades: ${element.weaknesses}</p>`
         let createDivFooter = document.createElement("div");
         createDivContenido.appendChild(createDivFooter);
