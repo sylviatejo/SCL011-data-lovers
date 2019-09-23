@@ -27,7 +27,6 @@
     animation-duration: 1s;
 }
 
-
 @keyframes modal {
     from {
         top: -330px;
@@ -64,6 +63,10 @@ footer {
     border: 8px;
     align-content: center;
     justify-content: center;
+}
+
+.modalBody p {
+    display: inline;
 }
 
 .map {

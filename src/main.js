@@ -60,14 +60,14 @@ function cardsPokemonGo(allPokeData) {
         createDivBody.className = "modalBody";
         createDivBody.setAttribute("id", "bodyMod");
         createDivBody.innerHTML += `<img src = ${element.img}></br>
-                                    <strong>Pokedex:</strong>  <p>${element.id}</p>
-                                    <strong>Caramelos:</strong>  <p>${element.candy}</p>
-                                    <strong>Cantidad de Caramelos:</strong>  <p>${element.candy_count}</p>
-                                    <strong>Tipo:</strong>  <p>${element.type}</p>
-                                    <strong>Cantidad de Huevos:</strong>  <p>${element.egg}</p>
-                                    <strong>Spawn:</strong>  <p>${element.avg_spawns}</p>
-                                    <strong>Hora:</strong>  <p>${element.spawn_time}</p>
-                                    <strong>Debilidades:</strong>  <p>${element.weaknesses}</p>`
+                                    <strong>Pokedex:</strong>  <p>${element.id}</p></br>
+                                    <strong>Caramelos:</strong>  <p>${element.candy}</p></br>
+                                    <strong>Cantidad de Caramelos:</strong>  <p>${element.candy_count}</p></br>
+                                    <strong>Tipo:</strong>  <p>${element.type}</p></br>
+                                    <strong>Cantidad de Huevos:</strong>  <p>${element.egg}</p></br>
+                                    <strong>Spawn:</strong>  <p>${element.avg_spawns}</p></br>
+                                    <strong>Hora:</strong>  <p>${element.spawn_time}</p></br>
+                                    <strong>Debilidades:</strong>  <p>${element.weaknesses}</p></br>`
         let createDivFooter = document.createElement("div");
         createDivContenido.appendChild(createDivFooter);
         createDivFooter.className = "footer";
