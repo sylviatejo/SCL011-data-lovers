@@ -221,7 +221,7 @@ El feedback recibido, nos hizo concluir lo siguiente:
 4.- Re evaluar color de fondo por otro un poco más oscuro para distinguirlo de las mini cards.<br />
 5.- Limpiar los selects para no confundir con información.<br />
 6.- Revisar por qué se duplican resultados en algunas opciones.<br />
-7.- Es necesario implementar los modales en el resto de los pokémons.
+7.- Es necesario implementar los modales en el resto de los pokémons.<br />
 8.- Re evealuar el botón "más...". Quizás subirlo más o incluir el "más..." dentro de la mini card.<br />
 9.- Hacer más consistente el estilo de las ilustraciones con el mostrado en las mini cards.<br />
 10.- Sacar el menú si no otorga información alguna.<br />
