@@ -27,6 +27,7 @@
     animation-duration: 1s;
 }
 
+
 @keyframes modal {
     from {
         top: -330px;

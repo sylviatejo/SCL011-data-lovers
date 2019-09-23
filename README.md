@@ -213,11 +213,18 @@ Después de mucho trabajo y esfuerzo, nuestro prototipo final, se ve así:
 
 ### **6.1 Testeos, insight, feedback**
 
-Pablo nos dio mucho feedback con respecto a:
+El feedback recibido, nos hizo concluir lo siguiente:
 
-1.- Cómo mostramos la información para no desanimar al usuario.
-2.- Cómo debemos explicar la información para que sea comprensible.
-3.- 
+1.- Tener cuidado de cómo mostramos la información para no desanimar al usuario.<br />
+2.- Sería óptimo diseñar una sección para explicar la información de los pokémons para que sea comprensible al usuario.<br />
+3.- Agregar más datos, como evoluciones.<br />
+4.- Re evaluar color de fondo por otro un poco más oscuro para distinguirlo de las mini cards.<br />
+5.- Limpiar los selects para no confundir con información.<br />
+6.- Revisar por qué se duplican resultados en algunas opciones.<br />
+7.- Es necesario implementar los modales en el resto de los pokémons.
+8.- Re evealuar el botón "más...". Quizás subirlo más o incluir el "más..." dentro de la mini card.<br />
+9.- Hacer más consistente el estilo de las ilustraciones con el mostrado en las mini cards.<br />
+10.- Sacar el menú si no otorga información alguna.<br />
 
 
 ### **6.2 A considerar en próximas iteraciones**
