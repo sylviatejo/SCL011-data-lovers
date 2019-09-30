@@ -204,6 +204,10 @@ Después de mucho trabajo y esfuerzo, nuestro prototipo final, se ve así:
 ![Prototipo Final 2](https://i.ibb.co/9YZyJ2q/prototipado2.png)
 ![Prototipo Final 3](https://i.ibb.co/zPkP6MH/prototipado3.png)
 
+### **5.1 Heurísticas**
+
+
+
 ## **6. Test de Usuario**
 
 (https://www.loom.com/share/a63deb9aee70411f9b1d6b572fdda227)

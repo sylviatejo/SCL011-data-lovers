@@ -1,3 +1,11 @@
+const pokeUrl = 'https://raw.githubusercontent.com/sylviatejo/SCL011-data-lovers/master/src/data/pokemon/pokemon.json'
+
+fetch(pokeUrl)
+.then(response => response.json() )
+.then(data => {
+    console.log(data)
+}) 
+
 // data completa
 const allPokeData = window.POKEMON.pokemon;
 // data promediada con una propiedad (nuevo arreglo numerico)
@@ -68,11 +76,6 @@ function cardsPokemonGo(allPokeData) {
                                     <strong>Spawn:</strong>  <p>${element.avg_spawns}</p></br>
                                     <strong>Hora:</strong>  <p>${element.spawn_time}</p></br>
                                     <strong>Debilidades:</strong>  <p>${element.weaknesses}</p></br>`
-        let createDivFooter = document.createElement("div");
-        createDivContenido.appendChild(createDivFooter);
-        createDivFooter.className = "footer";
-        createDivFooter.setAttribute("id", "footerMod");
-        createDivFooter.innerHTML += `<h2>Creado por Marielys y Sylvia</h2>`
 
         let modal = document.getElementById("miModal");
         let flex = document.getElementById("flex");

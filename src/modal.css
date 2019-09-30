@@ -2,7 +2,6 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
 }
 
 .modal {
@@ -25,6 +24,7 @@
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
     animation-name: modal;
     animation-duration: 1s;
+    padding-bottom: 20px;
 }
 
 @keyframes modal {
@@ -51,22 +51,31 @@
     cursor: pointer;
 }
 
-.modal-header,
-footer {
+.modal-header {
     padding: 8px 1px;
     background-image: linear-gradient(#36A8EE, #3AD8D3);
     color: #f2f2f2;
+    display: flex;
+    justify-content: center;
 }
 
 .modalBody {
     padding: 10px 8px;
     border: 8px;
+    text-align: left;
     align-content: center;
     justify-content: center;
+    padding-left: 80px;
 }
 
 .modalBody p {
     display: inline;
+}
+
+.modal h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .map {
@@ -80,5 +89,9 @@ footer {
     }
     .map {
         width: 50%;
+    }
+
+    .modalBody {
+        padding-left: 40px;
     }
 }
