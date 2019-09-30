@@ -2,12 +2,11 @@ const pokeUrl = 'https://raw.githubusercontent.com/sylviatejo/SCL011-data-lovers
 
 fetch(pokeUrl)
 .then(response => response.json() )
-.then(data => {
-    console.log(data)
-}) 
+.then(newPokeData => {
+        const allPokeData = (newPokeData.pokemon);
 
 // data completa
-const allPokeData = window.POKEMON.pokemon;
+//const allPokeData = window.POKEMON.pokemon;//
 // data promediada con una propiedad (nuevo arreglo numerico)
 const mediaPoke = window.data.pokeMedia(allPokeData);
 // data filtrada
@@ -160,3 +159,4 @@ function showOrdenPoke() {
     document.getElementById("principal").innerHTML = "";
     cardsPokemonGo(datapokemones);
 }
+}) 
