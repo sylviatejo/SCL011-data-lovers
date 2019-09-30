@@ -25,6 +25,7 @@
     animation-name: modal;
     animation-duration: 1s;
     padding-bottom: 20px;
+    border-radius: 20px;
 }
 
 @keyframes modal {
@@ -57,6 +58,8 @@
     color: #f2f2f2;
     display: flex;
     justify-content: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .modalBody {
@@ -65,7 +68,7 @@
     text-align: left;
     align-content: center;
     justify-content: center;
-    padding-left: 80px;
+    padding-left: 75px;
 }
 
 .modalBody p {

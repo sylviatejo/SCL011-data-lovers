@@ -206,7 +206,7 @@ Después de mucho trabajo y esfuerzo, nuestro prototipo final, se ve así:
 
 ### **5.1 Heurísticas**
 
-
+https://docs.google.com/spreadsheets/d/16tV6-U1IWWe5CE3oW04jAmsP1cIF0RdDww7PC8-QnGk/edit?usp=sharing
 
 ## **6. Test de Usuario**
 
